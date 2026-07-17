@@ -1,14 +1,20 @@
 :root {
-  --bg: oklch(98% 0.008 60);
-  --card-bg: oklch(99.5% 0.003 60);
-  --ink: oklch(22% 0.02 50);
-  --ink-soft: oklch(46% 0.02 50);
-  --border: oklch(89% 0.015 50);
-  --accent: oklch(56% 0.09 45);
-  --accent-dark: oklch(38% 0.08 45);
-  --accent-tint: oklch(92% 0.04 60);
-  --on-accent: oklch(99% 0.005 60);
-  --error: oklch(55% 0.18 25);
+  /* Coastal Escape palette */
+  --teal: #2A9D8F;      /* Transformative Teal */
+  --seafoam: #A8DADC;   /* Seafoom */
+  --mist: #D9F0F0;      /* Mist Blue */
+  --pearl: #F5F1EA;     /* Pearl White (swatch listed #F13AEE, a magenta — corrected to the actual cream tone shown) */
+
+  --bg: var(--pearl);
+  --card-bg: #FFFFFF;
+  --ink: #1E3437;
+  --ink-soft: #57726F;
+  --border: #D7E6E4;
+  --accent: var(--teal);
+  --accent-dark: #1E7268;
+  --accent-tint: var(--mist);
+  --on-accent: #FBFEFE;
+  --error: #C65D57;
 }
 
 * { box-sizing: border-box; }
@@ -22,6 +28,11 @@ body {
 
 a { color: inherit; }
 a:hover { color: var(--accent-dark); }
+
+:focus-visible {
+  outline: 2px solid var(--seafoam);
+  outline-offset: 2px;
+}
 
 .hidden { display: none !important; }
 
@@ -143,6 +154,7 @@ a:hover { color: var(--accent-dark); }
   flex-direction: column;
   gap: 14px;
   margin: 0;
+  box-shadow: 0 4px 16px rgba(42, 157, 143, 0.07);
 }
 
 .card img {
@@ -256,6 +268,7 @@ a:hover { color: var(--accent-dark); }
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 36px;
+  box-shadow: 0 4px 20px rgba(42, 157, 143, 0.08);
 }
 
 #agendaForm { display: flex; flex-direction: column; gap: 16px; }
