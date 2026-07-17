@@ -69,10 +69,18 @@ a:hover { color: var(--accent-dark); }
 
 /* Header */
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  box-shadow: 0 1px 0 var(--border);
+}
+
+.site-header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 28px 64px;
+  padding: 24px 64px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -130,6 +138,8 @@ a:hover { color: var(--accent-dark); }
 }
 
 .section-narrow { max-width: 900px; }
+
+#servicios, #libro, #agenda { scroll-margin-top: 84px; }
 
 .section h2 {
   font-family: 'Instrument Serif', serif;
@@ -340,7 +350,7 @@ a:hover { color: var(--accent-dark); }
 
 /* Responsive */
 @media (max-width: 860px) {
-  .site-header, .hero, .section, .site-footer { padding-left: 24px; padding-right: 24px; }
+  .site-header-inner, .hero, .section, .site-footer { padding-left: 24px; padding-right: 24px; }
 
   .hero { grid-template-columns: 1fr; gap: 32px; padding-top: 24px; }
   .hero h1 { font-size: 38px; max-width: none; }
@@ -359,6 +369,6 @@ a:hover { color: var(--accent-dark); }
 }
 
 @media (max-width: 480px) {
-  .site-header { flex-direction: column; gap: 12px; padding-top: 20px; }
+  .site-header-inner { flex-direction: column; gap: 12px; padding-top: 16px; padding-bottom: 16px; }
   .hero h1 { font-size: 30px; }
 }
