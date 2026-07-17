@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /formulario
+Disallow: /activate

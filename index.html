@@ -3,117 +3,195 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Información para tu landing page — Denisse Karmy</title>
+<title>Denisse Karmy — Coach Ontológico y Apreciativo</title>
+<meta name="description" content="Coaching Ontológico y Apreciativo, PNL y Constelaciones Familiares con Denisse Karmy. Acompañamiento para personas, equipos y organizaciones en procesos de transformación.">
+<meta property="og:title" content="Denisse Karmy — Coach Ontológico y Apreciativo">
+<meta property="og:description" content="Coaching Ontológico y Apreciativo, PNL y Constelaciones Familiares. Acompañamiento para personas, equipos y organizaciones.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/foto_bio_3.jpg">
+<meta name="robots" content="index, follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="wrap">
+<header class="site-header">
+  <span class="logo">Denisse Karmy</span>
+  <nav class="site-nav">
+    <a href="#servicios">Servicios</a>
+    <a href="#libro">Libro</a>
+    <a href="#agenda">Agendar</a>
+  </nav>
+</header>
 
-  <div id="successView" class="success hidden">
-    <div class="check">✓</div>
-    <h2>¡Gracias, Denisse!</h2>
-    <p>Recibimos tu información. La usaremos para armar tu landing page.</p>
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">Coach ontológico y apreciativo · PNL · Constelaciones familiares</p>
+    <h1>&ldquo;No cambio a las personas, las ayudo a recordar quiénes son cuando se atreven a mirar diferente.&rdquo;</h1>
+    <p class="lead">Acompaño a personas, equipos y organizaciones en procesos de transformación personal y profesional.</p>
+    <a href="#agenda" class="btn btn-accent">Agendar una sesión</a>
   </div>
+  <img class="hero-photo" src="img/foto_bio_3.jpg" alt="Denisse Karmy, coach ontológico y apreciativo" width="600" height="800">
+</section>
 
-  <form id="contentForm">
-    <h1>Información para tu landing page</h1>
-    <p class="intro">Completa lo que puedas — lo que falte lo dejamos como placeholder y lo ajustamos luego.</p>
+<section class="section section-narrow" aria-labelledby="sobre-mi-h">
+  <h2 id="sobre-mi-h">Sobre mí</h2>
+  <p class="body-copy">Mi trabajo integra, según la necesidad del cliente, al Coaching Ontológico y al Coaching Apreciativo, la Programación Neurolingüística (PNL) y las Constelaciones Familiares, herramientas que permiten abordar desafíos personales y laborales de manera profunda y efectiva.</p>
+  <p class="body-copy">Cuento con experiencia en el acompañamiento de procesos de cambio, liderazgo, comunicación, desarrollo personal y grupal, gestión emocional y fortalecimiento de relaciones, ayudando a las personas a alcanzar mayor bienestar, claridad y coherencia en sus decisiones y acciones.</p>
+</section>
 
-    <section>
-      <h2>1. Sobre ti</h2>
-      <label>Nombre completo
-        <input type="text" name="Nombre" placeholder="Denisse Karmy" required>
-      </label>
-      <label>Breve descripción / bio (2-4 líneas)
-        <textarea name="Bio" rows="4" placeholder="Quién eres, tu enfoque, a quién ayudas..."></textarea>
-      </label>
-      <label>Frase o cita personal (opcional)
-        <input type="text" name="Frase" placeholder="Una frase que te represente">
-      </label>
-    </section>
+<section id="servicios" class="section" aria-labelledby="servicios-h">
+  <h2 id="servicios-h">Servicios</h2>
+  <div class="card-grid">
+    <article class="card">
+      <img src="img/coaching_individual.jpg" alt="Coaching Individual" width="400" height="200" loading="lazy">
+      <h3>Coaching Individual</h3>
+      <p>Sesiones personalizadas para procesos de cambio, claridad y desarrollo personal.</p>
+    </article>
+    <article class="card">
+      <img src="img/coaching_equipos_organizaciones.jpg" alt="Coaching de Equipos y Organizaciones" width="400" height="200" loading="lazy">
+      <h3>Coaching de Equipos y Organizaciones</h3>
+      <p>Liderazgo, comunicación y gestión del cambio para fortalecer la coherencia organizacional.</p>
+    </article>
+    <article class="card">
+      <img src="img/constelaciones_familiares.jpg" alt="Constelaciones Familiares" width="400" height="200" loading="lazy">
+      <h3>Constelaciones Familiares</h3>
+      <p>Espacios de trabajo profundo para sanar patrones familiares y relacionales.</p>
+    </article>
+    <article class="card">
+      <img src="img/gestion_emocional.jpg" alt="Gestión Emocional" width="400" height="200" loading="lazy">
+      <h3>Gestión Emocional</h3>
+      <p>Herramientas prácticas para comprender, regular y transformar tus emociones.</p>
+    </article>
+    <article class="card">
+      <img src="img/liderazgo_comunicacion.jpg" alt="Liderazgo y Comunicación" width="400" height="200" loading="lazy">
+      <h3>Liderazgo y Comunicación</h3>
+      <p>Desarrollo de habilidades de liderazgo consciente y comunicación efectiva.</p>
+    </article>
+  </div>
+</section>
 
-    <section>
-      <h2>2. Servicios / cursos</h2>
-      <label>Lista de servicios (nombre + breve descripción de cada uno)
-        <textarea name="Servicios" rows="6" placeholder="Ej: Coaching Ontológico — Sesiones individuales para..."></textarea>
-      </label>
-      <label>Precios o modalidad de cada servicio (si aplica)
-        <textarea name="Precios" rows="3"></textarea>
-      </label>
-    </section>
-
-    <section>
-      <h2>3. Libro</h2>
-      <label>Título del libro
-        <input type="text" name="Libro - Titulo">
-      </label>
-      <label>Link de compra (Amazon u otro)
-        <input type="url" name="Libro - Link" placeholder="https://...">
-      </label>
-      <label>Breve descripción del libro
-        <textarea name="Libro - Descripcion" rows="3"></textarea>
-      </label>
-    </section>
-
-    <section>
-      <h2>4. Redes y contacto</h2>
-      <label>Instagram
-        <input type="text" name="Instagram" placeholder="@usuario">
-      </label>
-      <label>LinkedIn
-        <input type="text" name="LinkedIn" placeholder="linkedin.com/in/...">
-      </label>
-      <label>Otras redes (Facebook, YouTube, TikTok, etc.)
-        <input type="text" name="Otras redes">
-      </label>
-      <label>Correo electrónico de contacto
-        <input type="email" name="Correo" placeholder="correo@dominio.com" required>
-      </label>
-      <label>Teléfono de contacto (opcional)
-        <input type="tel" name="Telefono" placeholder="+34 600 000 000">
-      </label>
-      <label>Link de video de YouTube (si tienes uno de presentación)
-        <input type="url" name="YouTube" placeholder="https://youtube.com/...">
-      </label>
-    </section>
-
-    <section>
-      <h2>5. Marca visual</h2>
-      <label>Colores de marca (si tienes)
-        <input type="text" name="Colores" placeholder="Ej: verde salvia, beige, dorado">
-      </label>
-    </section>
-
-    <section>
-      <h2>6. Checklist de imágenes que enviarás</h2>
-      <p class="hint">Marca las que ya tienes disponibles. Envíalas por correo o WhatsApp aparte — aquí solo confirmamos cuáles llegarán.</p>
-      <div class="checklist">
-        <label class="check-row"><input type="checkbox" name="img_foto_principal" value="Foto personal principal"> Foto personal principal (retrato profesional)</label>
-        <label class="check-row"><input type="checkbox" name="img_foto_secundaria" value="Foto personal secundaria"> Foto personal secundaria ("Sobre mí", más cercana)</label>
-        <label class="check-row"><input type="checkbox" name="img_logo" value="Logo/isotipo"> Logo o isotipo personal (si existe)</label>
-        <label class="check-row"><input type="checkbox" name="img_portada_libro" value="Portada del libro"> Foto de portada del libro</label>
-        <label class="check-row"><input type="checkbox" name="img_fotos_servicios" value="Fotos de servicios/cursos"> Fotos referenciales por cada servicio/curso</label>
-        <label class="check-row"><input type="checkbox" name="img_fotos_sesiones" value="Fotos/video de sesiones"> Fotos o video de sesiones/talleres en acción</label>
-        <label class="check-row"><input type="checkbox" name="img_certificaciones" value="Certificaciones/avales"> Íconos o imágenes de certificaciones/avales</label>
-        <label class="check-row"><input type="checkbox" name="img_medios" value="Medios/empresas"> Fotos o logos de medios/empresas donde ha participado</label>
-        <label class="check-row"><input type="checkbox" name="img_hero_bg" value="Imagen hero"> Imagen de fondo para portada (hero)</label>
+<section class="section" aria-labelledby="curso-h">
+  <div class="curso-box">
+    <div class="curso-grid">
+      <div>
+        <p class="eyebrow eyebrow-tight">Curso online</p>
+        <h2 id="curso-h" class="curso-title">Tu Viaje a la Liberación</h2>
+        <p class="body-copy">Un recorrido para soltar creencias, patrones y cargas emocionales que te mantienen atrapado/a, y reencontrarte con la versión de ti que actúa desde la libertad.</p>
+        <button type="button" id="cursoToggle" class="btn btn-accent-dark" aria-expanded="false" aria-controls="cursoDetails">Quiero saber más</button>
       </div>
-    </section>
+      <div class="video-placeholder">
+        <span>Video de YouTube del curso (próximamente)</span>
+      </div>
+    </div>
+    <div id="cursoDetails" class="curso-details hidden">
+      <div>
+        <h3>Contenido</h3>
+        <p>Módulo 1: Autoconocimiento · Módulo 2: Soltar creencias limitantes · Módulo 3: Gestión emocional · Módulo 4: Integración y nuevos hábitos. (contenido genérico, a definir)</p>
+      </div>
+      <div>
+        <h3>Valor</h3>
+        <p>$XX.XXX (precio referencial, a confirmar)</p>
+      </div>
+      <div>
+        <h3>Medios de pago</h3>
+        <p>Transferencia bancaria, tarjeta de crédito/débito (WebPay), MercadoPago (por definir)</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section>
-      <h2>7. Notas adicionales</h2>
-      <textarea name="Notas" rows="3" placeholder="Cualquier cosa más que quieras contarnos"></textarea>
-    </section>
+<section id="libro" class="section" aria-labelledby="libro-h">
+  <div class="libro-grid">
+    <img src="img/foto_libro_la_verdad_2.jpeg" alt="Portada del libro La Verdad, Claves para tu Felicidad" width="500" height="500">
+    <div>
+      <p class="eyebrow eyebrow-tight">Libro</p>
+      <h2 id="libro-h">La Verdad, Claves para tu Felicidad</h2>
+      <p class="body-copy">Es un libro fascinante que explora los intrincados caminos de la autoconciencia y el desarrollo personal para vivir en felicidad. La Verdad te invita a sumergirte en un viaje hacia tu verdad interior, donde encontrarás valiosas perspectivas sobre cómo alcanzar una vida más auténtica y significativa.</p>
+      <a href="https://www.amazon.com/-/es/VERDAD-Claves-para-Felicidad-Spanish/dp/B0CKXZPS7Q" target="_blank" rel="noopener" class="btn btn-accent">Comprar el libro</a>
+    </div>
+  </div>
+</section>
 
-    <button type="submit" id="submitBtn">Enviar información</button>
-    <p id="errorMsg" class="error hidden"></p>
-  </form>
+<section class="section" aria-labelledby="testimonios-h">
+  <h2 id="testimonios-h">Testimonios</h2>
+  <div class="card-grid">
+    <blockquote class="card testimonial">
+      <p>&ldquo;Trabajar con Denisse fue un antes y un después. Su acompañamiento me ayudó a ver con claridad lo que necesitaba cambiar.&rdquo;</p>
+      <cite>— Nombre Apellido</cite>
+    </blockquote>
+    <blockquote class="card testimonial">
+      <p>&ldquo;Un proceso profundo y transformador. Recomiendo totalmente su forma de acompañar.&rdquo;</p>
+      <cite>— Nombre Apellido</cite>
+    </blockquote>
+    <blockquote class="card testimonial">
+      <p>&ldquo;Encontré claridad y herramientas concretas para liderar a mi equipo de una forma más consciente.&rdquo;</p>
+      <cite>— Nombre Apellido</cite>
+    </blockquote>
+  </div>
+</section>
 
-</div>
+<section id="agenda" class="section" aria-labelledby="agenda-h">
+  <div class="agenda-grid">
+    <div>
+      <h2 id="agenda-h">Agenda tu sesión</h2>
+      <p class="body-copy">Cuéntame brevemente qué buscas y te contacto para coordinar horario.</p>
+      <div class="contact-list">
+        <span>📧 <a href="mailto:dkarmy@gmail.com">dkarmy@gmail.com</a></span>
+        <span>📷 Instagram: <a href="https://instagram.com/corazones_intuitivos" target="_blank" rel="noopener">@corazones_intuitivos</a></span>
+        <span>💼 LinkedIn: <a href="https://www.linkedin.com/in/denisse-karmy-7ab96a31/" target="_blank" rel="noopener">Denisse Karmy</a></span>
+      </div>
+    </div>
 
-<script src="script.js"></script>
+    <div class="form-card">
+      <div id="agendaSuccess" class="success hidden">
+        <div class="check">✓</div>
+        <h3 id="successName">¡Gracias!</h3>
+        <p>Recibí tu solicitud. Te contactaré pronto para coordinar tu sesión.</p>
+      </div>
+
+      <form id="agendaForm">
+        <label>Nombre
+          <input type="text" name="Nombre" required>
+        </label>
+        <label>Correo
+          <input type="email" name="Correo" required>
+        </label>
+        <label>Teléfono
+          <input type="tel" name="Telefono" required>
+        </label>
+        <label>¿Cómo te puedo ayudar?
+          <select name="Servicio" required>
+            <option value="">Selecciona una opción</option>
+            <option value="individual">Coaching Individual</option>
+            <option value="equipos">Coaching de Equipos y Organizaciones</option>
+            <option value="constelaciones">Constelaciones Familiares</option>
+            <option value="curso">Curso Tu Viaje a la Liberación</option>
+          </select>
+        </label>
+        <label>Mensaje (opcional)
+          <textarea name="Mensaje" rows="3"></textarea>
+        </label>
+        <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off">
+        <button type="submit" id="agendaSubmitBtn">Enviar solicitud</button>
+        <p id="agendaError" class="error hidden"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <span>© 2026 Denisse Karmy · Coach Ontológico y Apreciativo</span>
+  <div class="footer-links">
+    <a href="https://instagram.com/corazones_intuitivos" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.linkedin.com/in/denisse-karmy-7ab96a31/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://web.facebook.com/p/Corazones-intuitivos-Denisse-Karmy-100064726447124/" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.youtube.com/@corazonesintuitivosdenisse3266" target="_blank" rel="noopener">YouTube</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>

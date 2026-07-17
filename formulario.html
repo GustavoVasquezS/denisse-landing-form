@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Información para tu landing page — Denisse Karmy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+
+<div class="wrap">
+
+  <div id="successView" class="success hidden">
+    <div class="check">✓</div>
+    <h2>¡Gracias, Denisse!</h2>
+    <p>Recibimos tu información. La usaremos para armar tu landing page.</p>
+  </div>
+
+  <form id="contentForm">
+    <h1>Información para tu landing page</h1>
+    <p class="intro">Completa lo que puedas — lo que falte lo dejamos como placeholder y lo ajustamos luego.</p>
+
+    <section>
+      <h2>1. Sobre ti</h2>
+      <label>Nombre completo
+        <input type="text" name="Nombre" placeholder="Denisse Karmy" required>
+      </label>
+      <label>Breve descripción / bio (2-4 líneas)
+        <textarea name="Bio" rows="4" placeholder="Quién eres, tu enfoque, a quién ayudas..."></textarea>
+      </label>
+      <label>Frase o cita personal (opcional)
+        <input type="text" name="Frase" placeholder="Una frase que te represente">
+      </label>
+    </section>
+
+    <section>
+      <h2>2. Servicios / cursos</h2>
+      <label>Lista de servicios (nombre + breve descripción de cada uno)
+        <textarea name="Servicios" rows="6" placeholder="Ej: Coaching Ontológico — Sesiones individuales para..."></textarea>
+      </label>
+      <label>Precios o modalidad de cada servicio (si aplica)
+        <textarea name="Precios" rows="3"></textarea>
+      </label>
+    </section>
+
+    <section>
+      <h2>3. Libro</h2>
+      <label>Título del libro
+        <input type="text" name="Libro - Titulo">
+      </label>
+      <label>Link de compra (Amazon u otro)
+        <input type="url" name="Libro - Link" placeholder="https://...">
+      </label>
+      <label>Breve descripción del libro
+        <textarea name="Libro - Descripcion" rows="3"></textarea>
+      </label>
+    </section>
+
+    <section>
+      <h2>4. Redes y contacto</h2>
+      <label>Instagram
+        <input type="text" name="Instagram" placeholder="@usuario">
+      </label>
+      <label>LinkedIn
+        <input type="text" name="LinkedIn" placeholder="linkedin.com/in/...">
+      </label>
+      <label>Otras redes (Facebook, YouTube, TikTok, etc.)
+        <input type="text" name="Otras redes">
+      </label>
+      <label>Correo electrónico de contacto
+        <input type="email" name="Correo" placeholder="correo@dominio.com" required>
+      </label>
+      <label>Teléfono de contacto (opcional)
+        <input type="tel" name="Telefono" placeholder="+34 600 000 000">
+      </label>
+      <label>Link de video de YouTube (si tienes uno de presentación)
+        <input type="url" name="YouTube" placeholder="https://youtube.com/...">
+      </label>
+    </section>
+
+    <section>
+      <h2>5. Marca visual</h2>
+      <label>Colores de marca (si tienes)
+        <input type="text" name="Colores" placeholder="Ej: verde salvia, beige, dorado">
+      </label>
+    </section>
+
+    <section>
+      <h2>6. Checklist de imágenes que enviarás</h2>
+      <p class="hint">Marca las que ya tienes disponibles. Envíalas por correo o WhatsApp aparte — aquí solo confirmamos cuáles llegarán.</p>
+      <div class="checklist">
+        <label class="check-row"><input type="checkbox" name="img_foto_principal" value="Foto personal principal"> Foto personal principal (retrato profesional)</label>
+        <label class="check-row"><input type="checkbox" name="img_foto_secundaria" value="Foto personal secundaria"> Foto personal secundaria ("Sobre mí", más cercana)</label>
+        <label class="check-row"><input type="checkbox" name="img_logo" value="Logo/isotipo"> Logo o isotipo personal (si existe)</label>
+        <label class="check-row"><input type="checkbox" name="img_portada_libro" value="Portada del libro"> Foto de portada del libro</label>
+        <label class="check-row"><input type="checkbox" name="img_fotos_servicios" value="Fotos de servicios/cursos"> Fotos referenciales por cada servicio/curso</label>
+        <label class="check-row"><input type="checkbox" name="img_fotos_sesiones" value="Fotos/video de sesiones"> Fotos o video de sesiones/talleres en acción</label>
+        <label class="check-row"><input type="checkbox" name="img_certificaciones" value="Certificaciones/avales"> Íconos o imágenes de certificaciones/avales</label>
+        <label class="check-row"><input type="checkbox" name="img_medios" value="Medios/empresas"> Fotos o logos de medios/empresas donde ha participado</label>
+        <label class="check-row"><input type="checkbox" name="img_hero_bg" value="Imagen hero"> Imagen de fondo para portada (hero)</label>
+      </div>
+    </section>
+
+    <section>
+      <h2>7. Notas adicionales</h2>
+      <textarea name="Notas" rows="3" placeholder="Cualquier cosa más que quieras contarnos"></textarea>
+    </section>
+
+    <button type="submit" id="submitBtn">Enviar información</button>
+    <p id="errorMsg" class="error hidden"></p>
+  </form>
+
+</div>
+
+<script src="js/formulario.js"></script>
+</body>
+</html>
