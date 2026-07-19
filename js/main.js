@@ -11,6 +11,44 @@ cursoToggle.addEventListener('click', () => {
   cursoToggle.setAttribute('aria-expanded', String(!isOpen));
 });
 
+const testimonialTrack = document.getElementById('testimonialTrack');
+const testimonialPrev = document.getElementById('testimonialPrev');
+const testimonialNext = document.getElementById('testimonialNext');
+const testimonialDots = document.getElementById('testimonialDots');
+
+if (testimonialTrack) {
+  const testimonialCarousel = testimonialTrack.parentElement;
+  const pages = testimonialTrack.children;
+  const pageCount = pages.length;
+  let current = 0;
+
+  for (let i = 0; i < pageCount; i++) {
+    const dot = document.createElement('button');
+    dot.type = 'button';
+    dot.setAttribute('aria-label', `Ir al grupo ${i + 1} de testimonios`);
+    dot.addEventListener('click', () => goToPage(i));
+    testimonialDots.appendChild(dot);
+  }
+
+  function updateCarousel() {
+    testimonialTrack.style.transform = `translateX(-${current * 100}%)`;
+    testimonialCarousel.style.height = pages[current].offsetHeight + 'px';
+    testimonialPrev.disabled = current === 0;
+    testimonialNext.disabled = current === pageCount - 1;
+    [...testimonialDots.children].forEach((dot, i) => dot.classList.toggle('active', i === current));
+  }
+
+  function goToPage(i) {
+    current = Math.max(0, Math.min(pageCount - 1, i));
+    updateCarousel();
+  }
+
+  testimonialPrev.addEventListener('click', () => goToPage(current - 1));
+  testimonialNext.addEventListener('click', () => goToPage(current + 1));
+  window.addEventListener('resize', updateCarousel);
+  updateCarousel();
+}
+
 const form = document.getElementById('agendaForm');
 const submitBtn = document.getElementById('agendaSubmitBtn');
 const errorMsg = document.getElementById('agendaError');
