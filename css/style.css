@@ -210,6 +210,29 @@ a:hover { color: var(--accent-dark); }
 
 .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
+.hero-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  max-width: 300px;
+}
+
+.hero-stat-value {
+  font-family: 'Instrument Serif', serif;
+  font-size: 28px;
+  color: var(--ink);
+}
+
+.hero-stat-label {
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
 .hero-photo-wrap { position: relative; }
 
 .hero-photo {
