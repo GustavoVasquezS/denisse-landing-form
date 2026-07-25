@@ -11,6 +11,28 @@ cursoToggle.addEventListener('click', () => {
   cursoToggle.setAttribute('aria-expanded', String(!isOpen));
 });
 
+document.querySelectorAll('.faq-item').forEach((item) => {
+  const question = item.querySelector('.faq-question');
+  const answer = item.querySelector('.faq-answer');
+  const icon = item.querySelector('.faq-icon');
+
+  question.addEventListener('click', () => {
+    const isOpen = question.getAttribute('aria-expanded') === 'true';
+
+    document.querySelectorAll('.faq-question').forEach((q) => {
+      q.setAttribute('aria-expanded', 'false');
+      q.parentElement.querySelector('.faq-answer').classList.add('hidden');
+      q.querySelector('.faq-icon').textContent = '+';
+    });
+
+    if (!isOpen) {
+      question.setAttribute('aria-expanded', 'true');
+      answer.classList.remove('hidden');
+      icon.textContent = '×';
+    }
+  });
+});
+
 const testimonialTrack = document.getElementById('testimonialTrack');
 const testimonialPrev = document.getElementById('testimonialPrev');
 const testimonialNext = document.getElementById('testimonialNext');

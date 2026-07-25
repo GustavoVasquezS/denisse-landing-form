@@ -12,7 +12,7 @@
 <meta name="robots" content="index, follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -23,6 +23,7 @@
     <nav class="site-nav">
       <a href="#servicios">Servicios</a>
       <a href="#libro">Libro</a>
+      <a href="#faq">FAQ</a>
       <a href="#agenda">Agendar</a>
     </nav>
   </div>
@@ -31,47 +32,85 @@
 <section class="hero">
   <div class="hero-copy">
     <p class="eyebrow">Coach ontológico y apreciativo · PNL · Constelaciones familiares</p>
-    <h1>&ldquo;No cambio a las personas, las ayudo a recordar quiénes son cuando se atreven a mirar diferente.&rdquo;</h1>
+    <h1>&ldquo;No cambio a las personas, las ayudo a <em class="accent-italic">recordar quiénes son</em> cuando se atreven a mirar diferente.&rdquo;</h1>
     <p class="lead">Acompaño a personas, equipos y organizaciones en procesos de transformación personal y profesional.</p>
-    <a href="#agenda" class="btn btn-accent">Agendar una sesión</a>
+    <div class="hero-actions">
+      <a href="#agenda" class="btn btn-accent">Agendar una sesión</a>
+      <a href="#servicios" class="btn btn-outline">Conocer servicios</a>
+    </div>
   </div>
-  <img class="hero-photo" src="img/foto_bio_4.jpg" alt="Denisse Karmy, coach ontológico y apreciativo" width="1000" height="1322">
+  <div class="hero-photo-wrap">
+    <img class="hero-photo" src="img/foto_bio_4.jpg" alt="Denisse Karmy, coach ontológico y apreciativo" width="1000" height="1322">
+    <div class="hero-badge">
+      <span class="hero-badge-quote">&ldquo;Mirar diferente.&rdquo;</span>
+      <span class="hero-badge-sub">El primer paso</span>
+    </div>
+  </div>
 </section>
+
+<div class="marquee-band">
+  <ul>
+    <li>Coherencia</li>
+    <li>Liderazgo</li>
+    <li>Consciencia</li>
+    <li>Vínculos</li>
+    <li>Gestión emocional</li>
+    <li>Transformación</li>
+  </ul>
+</div>
 
 <section class="section section-narrow" aria-labelledby="sobre-mi-h">
   <h2 id="sobre-mi-h">Sobre mí</h2>
   <p class="body-copy">Mi trabajo integra, según la necesidad del cliente, al Coaching Ontológico y al Coaching Apreciativo, la Programación Neurolingüística (PNL) y las Constelaciones Familiares, herramientas que permiten abordar desafíos personales y laborales de manera profunda y efectiva.</p>
   <p class="body-copy">Cuento con experiencia en el acompañamiento de procesos de cambio, liderazgo, comunicación, desarrollo personal y grupal, gestión emocional y fortalecimiento de relaciones, ayudando a las personas a alcanzar mayor bienestar, claridad y coherencia en sus decisiones y acciones.</p>
+  <div class="credential-pills">
+    <span class="credential-pill"><span class="credential-check">&#10003;</span> Coach ontológico y apreciativo</span>
+    <span class="credential-pill"><span class="credential-check">&#10003;</span> Facilitadora PNL</span>
+    <span class="credential-pill"><span class="credential-check">&#10003;</span> Constelaciones familiares</span>
+  </div>
 </section>
 
-<section id="servicios" class="section" aria-labelledby="servicios-h">
-  <h2 id="servicios-h">Servicios</h2>
-  <div class="card-grid">
-    <article class="card">
-      <img src="img/coaching_individual.jpg" alt="Coaching Individual" width="400" height="200" loading="lazy">
-      <h3>Coaching Individual</h3>
-      <p>Sesiones personalizadas para procesos de cambio, claridad y desarrollo personal.</p>
-    </article>
-    <article class="card">
-      <img src="img/coaching_equipos_organizaciones.jpg" alt="Coaching de Equipos y Organizaciones" width="400" height="200" loading="lazy">
-      <h3>Coaching de Equipos y Organizaciones</h3>
-      <p>Liderazgo, comunicación y gestión del cambio para fortalecer la coherencia organizacional.</p>
-    </article>
-    <article class="card">
-      <img src="img/constelaciones_familiares.jpg" alt="Constelaciones Familiares" width="400" height="200" loading="lazy">
-      <h3>Constelaciones Familiares</h3>
-      <p>Espacios de trabajo profundo para sanar patrones familiares y relacionales.</p>
-    </article>
-    <article class="card">
-      <img src="img/gestion_emocional.jpg" alt="Gestión Emocional" width="400" height="200" loading="lazy">
-      <h3>Gestión Emocional</h3>
-      <p>Herramientas prácticas para comprender, regular y transformar tus emociones.</p>
-    </article>
-    <article class="card">
-      <img src="img/liderazgo_comunicacion.jpg" alt="Liderazgo y Comunicación" width="400" height="200" loading="lazy">
-      <h3>Liderazgo y Comunicación</h3>
-      <p>Desarrollo de habilidades de liderazgo consciente y comunicación efectiva.</p>
-    </article>
+<section id="servicios" class="section-dark">
+  <div class="section" aria-labelledby="servicios-h">
+    <p class="eyebrow">Servicios</p>
+    <h2 id="servicios-h">Cinco caminos, <em class="accent-italic">una misma búsqueda</em>.</h2>
+    <div class="card-grid card-grid-services">
+      <article class="card service-card">
+        <span class="service-number">01</span>
+        <img src="img/coaching_individual.jpg" alt="Coaching Individual" width="400" height="200" loading="lazy">
+        <h3>Coaching Individual</h3>
+        <p>Sesiones personalizadas para procesos de cambio, claridad y desarrollo personal.</p>
+        <a href="#agenda" class="service-link">Agendar &#8594;</a>
+      </article>
+      <article class="card service-card">
+        <span class="service-number">02</span>
+        <img src="img/coaching_equipos_organizaciones.jpg" alt="Coaching de Equipos y Organizaciones" width="400" height="200" loading="lazy">
+        <h3>Coaching de Equipos y Organizaciones</h3>
+        <p>Liderazgo, comunicación y gestión del cambio para fortalecer la coherencia organizacional.</p>
+        <a href="#agenda" class="service-link">Agendar &#8594;</a>
+      </article>
+      <article class="card service-card">
+        <span class="service-number">03</span>
+        <img src="img/constelaciones_familiares.jpg" alt="Constelaciones Familiares" width="400" height="200" loading="lazy">
+        <h3>Constelaciones Familiares</h3>
+        <p>Espacios de trabajo profundo para sanar patrones familiares y relacionales.</p>
+        <a href="#agenda" class="service-link">Agendar &#8594;</a>
+      </article>
+      <article class="card service-card">
+        <span class="service-number">04</span>
+        <img src="img/gestion_emocional.jpg" alt="Gestión Emocional" width="400" height="200" loading="lazy">
+        <h3>Gestión Emocional</h3>
+        <p>Herramientas prácticas para comprender, regular y transformar tus emociones.</p>
+        <a href="#agenda" class="service-link">Agendar &#8594;</a>
+      </article>
+      <article class="card service-card">
+        <span class="service-number">05</span>
+        <img src="img/liderazgo_comunicacion.jpg" alt="Liderazgo y Comunicación" width="400" height="200" loading="lazy">
+        <h3>Liderazgo y Comunicación</h3>
+        <p>Desarrollo de habilidades de liderazgo consciente y comunicación efectiva.</p>
+        <a href="#agenda" class="service-link">Agendar &#8594;</a>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -110,7 +149,7 @@
     <img src="img/foto_original_libro.jpg" alt="Portada del libro La Verdad, Claves para tu Felicidad" width="900" height="1439">
     <div>
       <p class="eyebrow eyebrow-tight">Libro</p>
-      <h2 id="libro-h">La Verdad, Claves para tu Felicidad</h2>
+      <h2 id="libro-h">La Verdad, <em class="accent-italic">Claves para tu Felicidad</em></h2>
       <p class="body-copy">Es un libro fascinante que explora los intrincados caminos de la autoconciencia y el desarrollo personal para vivir en felicidad. La Verdad te invita a sumergirte en un viaje hacia tu verdad interior, donde encontrarás valiosas perspectivas sobre cómo alcanzar una vida más auténtica y significativa.</p>
       <a href="https://www.amazon.com/-/es/VERDAD-Claves-para-Felicidad-Spanish/dp/B0CKXZPS7Q" target="_blank" rel="noopener" class="btn btn-accent">Comprar el libro</a>
     </div>
@@ -118,54 +157,65 @@
 </section>
 
 <section class="section" aria-labelledby="testimonios-h">
-  <h2 id="testimonios-h">Testimonios</h2>
+  <p class="eyebrow">Testimonios</p>
+  <h2 id="testimonios-h">Palabras de quienes han <em class="accent-italic">caminado el proceso</em></h2>
 
   <div class="testimonial-carousel">
     <div class="testimonial-track" id="testimonialTrack">
       <div class="testimonial-page">
         <blockquote class="card testimonial">
+          <span class="quote-mark" aria-hidden="true">&#8221;</span>
           <p>&ldquo;Yo gracias a ti, Denisse, y a este curso he logrado en mí increíbles cambios. ¡Gracias!&rdquo;</p>
           <cite>— María José Villabicencio</cite>
         </blockquote>
         <blockquote class="card testimonial">
+          <span class="quote-mark" aria-hidden="true">&#8221;</span>
           <p>&ldquo;Denisse, agradezco profundamente este taller que está siendo tremendamente significativo y me ha ayudado muchísimo. Estoy súper agradecida de esta preciosa oportunidad de abrirnos entre todas, así ir sanando, creciendo, viéndonos y compartiendo con mis compañeras de este camino, que son mujeres tremendas.&rdquo;</p>
           <cite>— Javiera Encina</cite>
         </blockquote>
         <blockquote class="card testimonial">
+          <span class="quote-mark" aria-hidden="true">&#8221;</span>
           <p>&ldquo;Linda Denisse, yo te agradezco de corazón lo bien que me ha hecho este taller. Soy una persona nueva, con herramientas que no conocía y que puedo ocupar en mi nueva yo.&rdquo;</p>
           <cite>— Anónimo</cite>
         </blockquote>
       </div>
       <div class="testimonial-page">
         <blockquote class="card testimonial">
+          <span class="quote-mark" aria-hidden="true">&#8221;</span>
           <p>&ldquo;Me vi y descubrí que tengo muchas heridas emocionales. Con el taller se empiezan a mostrar y a comprender, y eso es liberador: me quito peso de encima. Gracias.&rdquo;</p>
           <cite>— Anónimo</cite>
         </blockquote>
         <blockquote class="card testimonial">
+          <span class="quote-mark" aria-hidden="true">&#8221;</span>
           <p>&ldquo;Tu taller fue una experiencia muy mágica, cargada de energía femenina; un espacio para soltar y entregar muchas cosas que nos nublan la conciencia, nos enredan las emociones y nos desconectan del día a día. Sentí un gran alivio a 24 horas del taller respecto a mi ansiedad. Gracias por regalarme este espacio, para hacerme cariño y ser más consciente de mí, de mi entorno y de lo que realmente quiero.&rdquo;</p>
           <cite>— Ale</cite>
         </blockquote>
         <blockquote class="card testimonial">
+          <span class="quote-mark" aria-hidden="true">&#8221;</span>
           <p>&ldquo;Denisse, tu libro me ha ayudado mucho a superarme. ¡Infinitas gracias!&rdquo;</p>
           <cite>— Anónimo</cite>
         </blockquote>
       </div>
       <div class="testimonial-page">
         <blockquote class="card testimonial">
+          <span class="quote-mark" aria-hidden="true">&#8221;</span>
           <p>&ldquo;Me gustó mucho el libro. Me ayudó con unos temas que tenía; con sus ejercicios se me facilitó entenderlo.&rdquo;</p>
           <cite>— Anónimo</cite>
         </blockquote>
         <blockquote class="card testimonial">
+          <span class="quote-mark" aria-hidden="true">&#8221;</span>
           <p>&ldquo;¡Denisse, me encantó el libro!&rdquo;</p>
           <cite>— Anónimo</cite>
         </blockquote>
         <blockquote class="card testimonial">
+          <span class="quote-mark" aria-hidden="true">&#8221;</span>
           <p>&ldquo;El libro lo encontré maravilloso.&rdquo;</p>
           <cite>— Anónimo</cite>
         </blockquote>
       </div>
       <div class="testimonial-page">
         <blockquote class="card testimonial">
+          <span class="quote-mark" aria-hidden="true">&#8221;</span>
           <p>&ldquo;El libro ha sido un acompañamiento para conocerme y aclarar varios aspectos míos. Gracias.&rdquo;</p>
           <cite>— Anónimo</cite>
         </blockquote>
@@ -180,10 +230,56 @@
   </div>
 </section>
 
-<section id="agenda" class="section" aria-labelledby="agenda-h">
+<!-- Contenido borrador: Denisse debe revisar y ajustar preguntas/respuestas con su información real antes de publicar. -->
+<section id="faq" class="section section-narrow faq-section" aria-labelledby="faq-h">
+  <p class="eyebrow">Preguntas frecuentes</p>
+  <h2 id="faq-h">Antes de empezar</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button type="button" class="faq-question" aria-expanded="false">
+        <span>¿Cómo son las primeras sesiones?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer hidden">
+        <p>La primera conversación es de exploración: conversamos sobre lo que buscas, tus objetivos y evaluamos juntas si es un buen momento para comenzar un proceso.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button type="button" class="faq-question" aria-expanded="false">
+        <span>¿Las sesiones son online o presenciales?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer hidden">
+        <p>Ambas modalidades están disponibles, según lo que te acomode mejor.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button type="button" class="faq-question" aria-expanded="false">
+        <span>¿Cuánto dura un proceso de coaching?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer hidden">
+        <p>Varía según cada persona y objetivo. En general, los procesos se trabajan a lo largo de varias sesiones durante algunas semanas o meses.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button type="button" class="faq-question" aria-expanded="false">
+        <span>¿Qué es una constelación familiar?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer hidden">
+        <p>Es un espacio de trabajo sistémico donde se representan vínculos y patrones familiares para sanar cargas heredadas y encontrar mayor claridad y libertad.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="agenda" class="section-dark" aria-labelledby="agenda-h">
+  <div class="section">
   <div class="agenda-grid">
     <div>
-      <h2 id="agenda-h">Agenda tu sesión</h2>
+      <p class="eyebrow">Contacto</p>
+      <h2 id="agenda-h">Agenda tu <em class="accent-italic">sesión</em></h2>
       <p class="body-copy">Cuéntame brevemente qué buscas y te contacto para coordinar horario.</p>
       <div class="contact-list">
         <span>📧 <a href="mailto:dkarmy@gmail.com">dkarmy@gmail.com</a></span>
@@ -227,9 +323,10 @@
       </form>
     </div>
   </div>
+  </div>
 </section>
 
-<footer class="site-footer">
+<footer class="site-footer section-dark">
   <span>© 2026 Denisse Karmy · Coach Ontológico y Apreciativo</span>
   <div class="footer-links">
     <a href="https://instagram.com/corazones_intuitivos" target="_blank" rel="noopener">Instagram</a>
