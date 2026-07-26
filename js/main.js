@@ -13,6 +13,22 @@ if (cursoToggle && cursoDetails) {
   });
 }
 
+// Video testimonials: load the YouTube iframe only on click, so the page
+// doesn't pay YouTube's embed script cost for videos nobody plays.
+document.querySelectorAll('.video-thumb').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const frame = btn.closest('.video-testimonial-frame');
+    const videoId = btn.dataset.videoId;
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
+    iframe.title = btn.getAttribute('aria-label') || 'Video testimonio';
+    iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
+    iframe.allowFullscreen = true;
+    frame.innerHTML = '';
+    frame.appendChild(iframe);
+  });
+});
+
 document.querySelectorAll('.faq-item').forEach((item) => {
   const question = item.querySelector('.faq-question');
   const answer = item.querySelector('.faq-answer');
