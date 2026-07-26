@@ -55,6 +55,8 @@ a:hover { color: var(--accent-dark); }
 .section-dark .accent-italic { color: var(--gold); }
 
 .hidden { display: none !important; }
+.text-center { text-align: center; }
+.text-center .hero-actions { justify-content: center; }
 
 .eyebrow {
   font-size: 15px;
@@ -116,7 +118,11 @@ a:hover { color: var(--accent-dark); }
   font-family: 'Instrument Serif', serif;
   font-size: 26px;
   letter-spacing: 0.02em;
+  text-decoration: none;
+  color: inherit;
 }
+
+.mt-lg { margin-top: 32px; }
 
 .site-nav { display: flex; gap: 32px; font-size: 15px; }
 .site-nav a { text-decoration: none; }
