@@ -71,6 +71,14 @@ if (testimonialTrack) {
   testimonialNext.addEventListener('click', () => goToPage(current + 1));
   window.addEventListener('resize', updateCarousel);
   updateCarousel();
+
+  // Web fonts (Instrument Serif / Inter) can swap in after this first
+  // measurement and reflow the text taller, leaving the fixed inline
+  // height stale and clipping the card's bottom edge — recheck once
+  // fonts are actually ready.
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(updateCarousel);
+  }
 }
 
 const form = document.getElementById('agendaForm');
