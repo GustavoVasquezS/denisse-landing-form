@@ -380,6 +380,7 @@ a:hover { color: var(--accent-dark); }
 
 /* Video testimonial (click-to-load YouTube facade) */
 .video-testimonial { align-items: center; text-align: center; }
+.video-testimonial cite { font-size: 14px; font-weight: 600; color: var(--ink); font-style: normal; }
 
 .video-testimonial-frame {
   position: relative;
