@@ -11,10 +11,10 @@
 
   --bg: var(--cream);
   --card-bg: oklch(0.98 0.012 85);
-  --ink: oklch(0.2 0.05 265);
+  --ink: oklch(0.37 0.075 258);
   --ink-soft: oklch(0.42 0.04 265);
   --border: oklch(0.86 0.04 82);
-  --accent: var(--navy);
+  --accent: var(--ink);
   --accent-dark: var(--gold);
   --accent-tint: var(--gold-tint);
   --on-accent: var(--cream);
