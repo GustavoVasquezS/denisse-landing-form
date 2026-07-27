@@ -124,8 +124,18 @@ a:hover { color: var(--accent-dark); }
 
 .mt-lg { margin-top: 32px; }
 
-.site-nav { display: flex; gap: 32px; font-size: 15px; }
+.site-nav { display: flex; align-items: center; gap: 32px; font-size: 15px; flex-wrap: wrap; }
 .site-nav a { text-decoration: none; }
+
+.site-nav .nav-btn {
+  background: var(--accent);
+  color: var(--on-accent);
+  padding: 9px 22px;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.site-nav .nav-btn:hover { color: var(--on-accent); opacity: 0.85; }
 
 /* Dark (navy) section variant */
 .section-dark {
@@ -381,10 +391,9 @@ a:hover { color: var(--accent-dark); }
 .about-photo {
   width: 100%;
   height: auto;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
-  border-radius: 50%;
-  border: 1px solid var(--border);
+  border-radius: 24px;
 }
 
 /* Sections */
@@ -849,7 +858,7 @@ a:hover { color: var(--accent-dark); }
   .about-hero { grid-template-columns: 1fr; }
   .about-hero h1 { font-size: 32px; }
   .about-tagline { font-size: 19px; }
-  .about-photo { max-width: 220px; margin: 0 auto; order: -1; }
+  .about-photo { max-width: 320px; margin: 0 auto; order: -1; }
 
   .curso-box { padding: 32px 24px; }
   .curso-grid { grid-template-columns: 1fr; }
