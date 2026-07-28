@@ -438,7 +438,11 @@ a:hover { color: var(--accent-dark); }
 
 .card-grid-services {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  align-items: stretch;
 }
+
+.card-grid-services .card { display: flex; flex-direction: column; }
+.card-grid-services .card p { flex-grow: 1; }
 
 .service-card { position: relative; }
 
