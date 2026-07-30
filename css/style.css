@@ -227,29 +227,6 @@ a:hover { color: var(--accent-dark); }
 
 .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
-.hero-stat {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  margin-top: 40px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border);
-  max-width: 300px;
-}
-
-.hero-stat-value {
-  font-family: 'Instrument Serif', serif;
-  font-size: 28px;
-  color: var(--ink);
-}
-
-.hero-stat-label {
-  font-size: 13px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-}
-
 .hero-photo-wrap { position: relative; }
 
 .hero-photo {
@@ -289,7 +266,13 @@ a:hover { color: var(--accent-dark); }
 }
 
 /* Sobre mí (about-hero) */
-.about-hero h1 {
+.about-hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 64px 96px;
+}
+
+.about-hero h2 {
   font-family: 'Instrument Serif', serif;
   font-size: 42px;
   font-weight: 400;
@@ -388,14 +371,6 @@ a.about-feature-highlight:hover { text-decoration: underline; }
   font-size: 19px;
   color: var(--ink-soft);
   margin: 8px 0 32px 0;
-}
-
-.about-photo {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  border-radius: 24px;
 }
 
 /* Sections */
@@ -890,7 +865,7 @@ a.about-feature-highlight:hover { text-decoration: underline; }
 
 /* Responsive */
 @media (max-width: 860px) {
-  .site-header-inner, .hero, .section, .site-footer { padding-left: 24px; padding-right: 24px; }
+  .site-header-inner, .hero, .about-hero, .section, .site-footer { padding-left: 24px; padding-right: 24px; }
 
   .hero { grid-template-columns: 1fr; gap: 32px; padding-top: 24px; }
   .hero h1 { font-size: 38px; max-width: none; }
@@ -899,10 +874,8 @@ a.about-feature-highlight:hover { text-decoration: underline; }
   .hero-photo { aspect-ratio: 3 / 4; }
   .hero-badge { left: 12px; right: 12px; bottom: 16px; max-width: none; }
 
-  .about-hero { grid-template-columns: 1fr; }
-  .about-hero h1 { font-size: 32px; }
+  .about-hero h2 { font-size: 32px; }
   .about-tagline { font-size: 19px; }
-  .about-photo { max-width: 320px; margin: 0 auto; order: -1; }
 
   .curso-box { padding: 32px 24px; }
   .curso-grid { grid-template-columns: 1fr; }
