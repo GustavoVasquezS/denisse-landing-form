@@ -104,14 +104,22 @@ const successView = document.getElementById('agendaSuccess');
 const successName = document.getElementById('successName');
 
 if (form) {
-  // Allows other pages to link here as index.html?servicio=curso#agenda
-  // and land with the right option already selected.
-  const preselect = new URLSearchParams(window.location.search).get('servicio');
+  // Allows other pages to link here as index.html#agenda?servicio=curso
+  // and land with the right option already selected. The servicio param
+  // lives inside the hash (not the query string) so it survives the
+  // index.html -> /index redirect from vercel.json's cleanUrls, which
+  // drops query strings but never touches the fragment.
+  const hash = window.location.hash.slice(1);
+  const [hashTarget, hashQuery] = hash.split('?');
+  const preselect = hashQuery ? new URLSearchParams(hashQuery).get('servicio') : null;
   if (preselect) {
     const servicioField = form.querySelector('[name="Servicio"]');
     if (servicioField && [...servicioField.options].some((o) => o.value === preselect)) {
       servicioField.value = preselect;
     }
+  }
+  if (hashTarget === 'agenda') {
+    document.getElementById('agenda')?.scrollIntoView();
   }
 
   form.addEventListener('submit', async (e) => {

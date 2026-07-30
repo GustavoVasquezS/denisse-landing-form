@@ -67,7 +67,7 @@ a:hover { color: var(--accent-dark); }
 }
 
 .eyebrow-tight { font-size: 14px; margin-bottom: 16px; }
-.eyebrow-lg { font-size: 38px; }
+.eyebrow-lg { font-size: 19px; }
 
 .body-copy {
   font-size: 17px;
@@ -344,7 +344,8 @@ a:hover { color: var(--accent-dark); }
 }
 
 .about-feature strong { color: var(--ink); }
-.about-feature-highlight { color: var(--accent-dark); font-weight: 600; }
+.about-feature-highlight { color: var(--accent-dark); font-weight: 600; text-decoration: none; }
+a.about-feature-highlight:hover { text-decoration: underline; }
 
 .credential-card-grid {
   display: grid;
