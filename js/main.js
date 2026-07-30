@@ -104,23 +104,30 @@ const successView = document.getElementById('agendaSuccess');
 const successName = document.getElementById('successName');
 
 if (form) {
-  // Allows other pages to link here as index.html#agenda?servicio=curso
-  // and land with the right option already selected. The servicio param
-  // lives inside the hash (not the query string) so it survives the
-  // index.html -> /index redirect from vercel.json's cleanUrls, which
-  // drops query strings but never touches the fragment.
-  const hash = window.location.hash.slice(1);
-  const [hashTarget, hashQuery] = hash.split('?');
-  const preselect = hashQuery ? new URLSearchParams(hashQuery).get('servicio') : null;
-  if (preselect) {
-    const servicioField = form.querySelector('[name="Servicio"]');
-    if (servicioField && [...servicioField.options].some((o) => o.value === preselect)) {
-      servicioField.value = preselect;
+  // Allows other pages (and buttons on this same page) to link here as
+  // #agenda?servicio=curso and land with the right option already selected.
+  // The servicio param lives inside the hash (not the query string) so it
+  // survives the index.html -> /index redirect from vercel.json's cleanUrls,
+  // which drops query strings but never touches the fragment.
+  // Runs on load AND on hashchange, since clicking a same-page anchor link
+  // (e.g. the curso teaser button on this very page) only changes the hash
+  // without a reload, so the initial-load code alone would never see it.
+  function applyAgendaHash() {
+    const hash = window.location.hash.slice(1);
+    const [hashTarget, hashQuery] = hash.split('?');
+    const preselect = hashQuery ? new URLSearchParams(hashQuery).get('servicio') : null;
+    if (preselect) {
+      const servicioField = form.querySelector('[name="Servicio"]');
+      if (servicioField && [...servicioField.options].some((o) => o.value === preselect)) {
+        servicioField.value = preselect;
+      }
+    }
+    if (hashTarget === 'agenda') {
+      document.getElementById('agenda')?.scrollIntoView();
     }
   }
-  if (hashTarget === 'agenda') {
-    document.getElementById('agenda')?.scrollIntoView();
-  }
+  applyAgendaHash();
+  window.addEventListener('hashchange', applyAgendaHash);
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
