@@ -138,6 +138,56 @@ a:hover { color: var(--accent-dark); }
 
 .site-nav .nav-btn:hover { color: var(--on-accent); opacity: 0.85; }
 
+/* Nav dropdown (Sesiones -> 4 landing pages) */
+.nav-dropdown { position: relative; }
+.nav-dropdown-toggle {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+}
+.nav-dropdown-caret { font-size: 10px; transition: transform 0.2s ease; }
+.nav-dropdown.is-open .nav-dropdown-caret { transform: rotate(180deg); }
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 14px;
+  min-width: 260px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  z-index: 110;
+}
+/* The 14px gap above lives inside .nav-dropdown-menu (not as a top offset)
+   so it's part of the same hoverable box as the visible card below: moving
+   the cursor from the toggle button down into the menu never crosses a dead
+   zone that isn't covered by either element, which is what was breaking
+   hover-to-open (it worked only via click before this). */
+.nav-dropdown-menu-inner {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow-elegant);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.nav-dropdown-menu-inner a { padding: 10px 14px; border-radius: 8px; font-size: 14px; white-space: nowrap; text-decoration: none; }
+.nav-dropdown-menu-inner a:hover { background: var(--accent-tint); }
+
+.nav-dropdown.is-open .nav-dropdown-menu,
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu { opacity: 1; visibility: visible; pointer-events: auto; }
+
 /* Dark (navy) section variant */
 .section-dark {
   background: var(--navy);
@@ -270,6 +320,10 @@ a:hover { color: var(--accent-dark); }
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 64px 96px;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 64px;
+  align-items: start;
 }
 
 .about-hero h2 {
@@ -647,6 +701,21 @@ a.about-feature-highlight:hover { text-decoration: underline; }
 .curso-actions { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
 .curso-actions .btn { font-size: 15px; padding: 14px 30px; }
 
+.curso-grid img, .curso-grid .service-photo-placeholder {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.curso-grid .service-photo-placeholder {
+  background: var(--card-bg);
+  border-color: var(--border);
+}
+
+.video-gap { max-width: 480px; margin: 0 auto; }
+
 .video-placeholder {
   position: relative;
   width: 100%;
@@ -874,8 +943,10 @@ a.about-feature-highlight:hover { text-decoration: underline; }
   .hero-photo { aspect-ratio: 3 / 4; }
   .hero-badge { left: 12px; right: 12px; bottom: 16px; max-width: none; }
 
+  .about-hero { grid-template-columns: 1fr; gap: 32px; }
   .about-hero h2 { font-size: 32px; }
   .about-tagline { font-size: 19px; }
+  .about-hero .hero-photo { max-width: 320px; margin: 0 auto; order: -1; }
 
   .curso-box { padding: 32px 24px; }
   .curso-grid { grid-template-columns: 1fr; }
@@ -888,6 +959,24 @@ a.about-feature-highlight:hover { text-decoration: underline; }
   .agenda-grid { grid-template-columns: 1fr; gap: 40px; }
 
   .site-nav { gap: 20px; }
+
+  .nav-dropdown-menu {
+    position: static;
+    transform: none;
+    padding-top: 0;
+    min-width: 0;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .nav-dropdown-menu-inner {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 4px 0 4px 12px;
+  }
+  .nav-dropdown.is-open .nav-dropdown-menu { display: flex; }
 }
 
 @media (max-width: 480px) {

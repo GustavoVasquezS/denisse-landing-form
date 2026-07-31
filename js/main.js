@@ -1,6 +1,31 @@
 // TODO: cambiar a dkarmy@gmail.com (y reactivar en activate.html) cuando se pase de pruebas a producción.
 const FORM_ENDPOINT = 'https://formsubmit.co/ajax/sentimentapi.noreply@gmail.com';
 
+document.querySelectorAll('.nav-dropdown-toggle').forEach((toggle) => {
+  const dropdown = toggle.closest('.nav-dropdown');
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = dropdown.classList.contains('is-open');
+    document.querySelectorAll('.nav-dropdown.is-open').forEach((d) => {
+      d.classList.remove('is-open');
+      d.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) { dropdown.classList.add('is-open'); toggle.setAttribute('aria-expanded', 'true'); }
+  });
+});
+document.addEventListener('click', () => {
+  document.querySelectorAll('.nav-dropdown.is-open').forEach((d) => {
+    d.classList.remove('is-open');
+    d.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
+  });
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') document.querySelectorAll('.nav-dropdown.is-open').forEach((d) => {
+    d.classList.remove('is-open');
+    d.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
+  });
+});
+
 const cursoToggle = document.getElementById('cursoToggle');
 const cursoDetails = document.getElementById('cursoDetails');
 
