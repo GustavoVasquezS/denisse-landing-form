@@ -1,0 +1,56 @@
+name: Backup contenido del sitio
+
+# Respaldo independiente de Google Sheets: descarga el CSV publicado y lo
+# guarda en el repo. El historial de commits de backups/contenido-sitio-historial.csv
+# ES el respaldo -- no se guardan archivos por fecha, se confía en `git log`
+# / `git show <sha>:backups/...` para ver o restaurar cualquier estado anterior.
+# Si la hoja se corrompe o se borra en Google, este historial sigue disponible.
+
+on:
+  schedule:
+    # Cada 6 horas. El cron de GitHub Actions siempre corre en UTC, no en
+    # hora de Chile.
+    - cron: '0 */6 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: backup-content
+  cancel-in-progress: false
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      # Debe coincidir con CONTENT_SHEET_URL en js/main.js. No es un secreto:
+      # es el link público de "Publicar en la web" de Google Sheets, sin
+      # autenticación. Si la hoja se vuelve a publicar y cambia la URL, hay
+      # que actualizarla en los dos lugares (este workflow y js/main.js).
+      CONTENT_SHEET_URL: https://docs.google.com/spreadsheets/d/e/2PACX-1vRdNhhffmw-wmfiLzB0jxBtI3WieGFw7SqgWxTd6Ze2jX2Va524ZfrgcIaX98PmrJEygK9f_QsCnngN/pub?gid=817921967&single=true&output=csv
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Descargar CSV publicado
+        run: |
+          mkdir -p backups
+          curl -fsSL "$CONTENT_SHEET_URL" -o backups/contenido-sitio-historial.csv.new
+          if [ ! -s backups/contenido-sitio-historial.csv.new ]; then
+            echo "El CSV descargado está vacío, abortando sin tocar el respaldo existente."
+            exit 1
+          fi
+          mv backups/contenido-sitio-historial.csv.new backups/contenido-sitio-historial.csv
+
+      - name: Commit si hubo cambios
+        run: |
+          git config user.name "content-backup-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add backups/contenido-sitio-historial.csv
+          if git diff --cached --quiet; then
+            echo "Sin cambios en el contenido, no se crea commit."
+          else
+            git commit -m "Backup contenido: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi

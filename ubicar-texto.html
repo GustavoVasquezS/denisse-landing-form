@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ubicar texto — herramienta interna</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .locator-wrap { max-width: 900px; margin: 0 auto; padding: 48px 24px 96px; }
+  .locator-wrap h1 { margin-bottom: 6px; }
+  .locator-wrap .body-copy { margin-top: 0; }
+  #locateFilter {
+    width: 100%; padding: 12px 16px; margin: 24px 0; font: inherit;
+    border: 1px solid var(--border); border-radius: 10px; background: var(--card-bg); color: var(--ink);
+  }
+  .locate-row {
+    display: flex; align-items: flex-start; gap: 16px; padding: 14px 16px;
+    border: 1px solid var(--border); border-radius: 12px; background: var(--card-bg);
+    margin-bottom: 10px;
+  }
+  .locate-row-info { flex: 1; min-width: 0; }
+  .locate-ubicacion { font-weight: 600; }
+  .locate-key { font-family: monospace; font-size: 12px; color: var(--ink-soft); margin: 2px 0; }
+  .locate-preview { font-size: 14px; color: var(--ink-soft); margin: 4px 0 0; }
+  .locate-row button {
+    flex-shrink: 0; font: inherit; font-size: 14px; padding: 10px 18px; border-radius: 100px;
+    border: 1px solid var(--border); background: var(--gold); color: var(--navy); cursor: pointer;
+  }
+  .locate-row button:disabled { background: none; color: var(--ink-soft); cursor: not-allowed; opacity: 0.6; }
+  .locate-count { color: var(--ink-soft); font-size: 14px; }
+</style>
+</head>
+<body>
+
+<div class="locator-wrap">
+  <p class="eyebrow eyebrow-tight">Herramienta interna · solo Gustavo / Denisse</p>
+  <h1>Ubicar texto en la página</h1>
+  <p class="body-copy">Busca por Ubicación, key o texto actual, y haz clic en "Ver en la página" para abrir el sitio real con ese texto resaltado.</p>
+
+  <input type="search" id="locateFilter" placeholder="Buscar por página, sección o texto...">
+  <p class="locate-count" id="locateCount"></p>
+  <div id="locateList"></div>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+(async () => {
+  const PAGE_MAP = {
+    inicio: 'index.html',
+    individual: 'coaching-individual.html',
+    equipos: 'coaching-equipos.html',
+    constelaciones: 'constelaciones.html',
+    pnl: 'pnl.html',
+    curso: 'curso.html',
+    libro: 'libro.html',
+    global: 'index.html'
+  };
+
+  const listEl = document.getElementById('locateList');
+  const filterEl = document.getElementById('locateFilter');
+  const countEl = document.getElementById('locateCount');
+
+  let items = [];
+  try {
+    const res = await fetch(CONTENT_SHEET_URL, { cache: 'no-store' });
+    const csvText = await res.text();
+    const rows = parseContentCSV(csvText);
+    rows.shift();
+    items = rows
+      .map((cols) => ({ key: (cols[0] || '').trim(), ubicacion: cols[1] || '', texto: cols[2] || '' }))
+      .filter((row) => row.key);
+  } catch (err) {
+    listEl.textContent = 'No se pudo cargar la hoja de contenido.';
+    return;
+  }
+
+  function render(filter) {
+    const q = filter.trim().toLowerCase();
+    const filtered = q
+      ? items.filter((row) => (row.ubicacion + ' ' + row.key + ' ' + row.texto).toLowerCase().includes(q))
+      : items;
+
+    countEl.textContent = `${filtered.length} de ${items.length} textos`;
+    listEl.innerHTML = filtered.map((row) => {
+      const parts = row.key.split('.');
+      const isMeta = parts[1] === 'meta';
+      const targetFile = PAGE_MAP[parts[0]] || 'index.html';
+      const preview = row.texto.length > 90 ? row.texto.slice(0, 90) + '…' : row.texto;
+      // OJO: nunca usar "data-key" acá -- applyContentOverrides() en main.js
+      // busca [data-key] en TODO el documento y sobreescribiría el texto de
+      // este botón con el contenido real de esa fila (bug ya detectado en QA).
+      const btnAttrs = isMeta
+        ? `disabled title="Este campo es un <meta> de SEO, no tiene una posición visible en la página"`
+        : `data-target="${targetFile}" data-locate-key="${escapeHtml(row.key)}"`;
+      return `
+        <div class="locate-row">
+          <div class="locate-row-info">
+            <p class="locate-ubicacion">${escapeHtml(row.ubicacion)}</p>
+            <p class="locate-key">${escapeHtml(row.key)}</p>
+            <p class="locate-preview">${escapeHtml(preview)}</p>
+          </div>
+          <button type="button" ${btnAttrs}>Ver en la página</button>
+        </div>`;
+    }).join('');
+  }
+
+  function escapeHtml(str) {
+    return str.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  }
+
+  listEl.addEventListener('click', (e) => {
+    const btn = e.target.closest('button[data-target]');
+    if (!btn) return;
+    const url = `${btn.dataset.target}#locate=${encodeURIComponent(btn.dataset.locateKey)}`;
+    window.open(url, '_blank', 'noopener');
+  });
+
+  filterEl.addEventListener('input', () => render(filterEl.value));
+  render('');
+})();
+</script>
+</body>
+</html>

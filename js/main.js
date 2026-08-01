@@ -1,6 +1,95 @@
 // TODO: cambiar a dkarmy@gmail.com (y reactivar en activate.html) cuando se pase de pruebas a producción.
 const FORM_ENDPOINT = 'https://formsubmit.co/ajax/sentimentapi.noreply@gmail.com';
 
+// Contenido editable: la hoja de Google Sheets publicada es la fuente de
+// texto en vivo. Cada fila tiene (key, Ubicación, Texto actual); cada
+// elemento editable del HTML lleva un atributo data-key con esa misma key.
+// El HTML siempre trae el texto por defecto ya escrito -> si la hoja no
+// carga (sin internet, URL caída, fila vacía) el sitio se ve exactamente
+// igual, nunca queda en blanco. Solo se sobreescribe lo que la hoja trae
+// con contenido real.
+const CONTENT_SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRdNhhffmw-wmfiLzB0jxBtI3WieGFw7SqgWxTd6Ze2jX2Va524ZfrgcIaX98PmrJEygK9f_QsCnngN/pub?gid=817921967&single=true&output=csv';
+
+function parseContentCSV(text) {
+  const rows = [];
+  let row = [];
+  let field = '';
+  let inQuotes = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (inQuotes) {
+      if (c === '"') {
+        if (text[i + 1] === '"') { field += '"'; i++; }
+        else { inQuotes = false; }
+      } else {
+        field += c;
+      }
+    } else if (c === '"') {
+      inQuotes = true;
+    } else if (c === ',') {
+      row.push(field);
+      field = '';
+    } else if (c === '\r') {
+      // skip, \n handles the line break
+    } else if (c === '\n') {
+      row.push(field);
+      rows.push(row);
+      row = [];
+      field = '';
+    } else {
+      field += c;
+    }
+  }
+  if (field.length || row.length) {
+    row.push(field);
+    rows.push(row);
+  }
+  return rows;
+}
+
+async function applyContentOverrides() {
+  try {
+    const res = await fetch(CONTENT_SHEET_URL, { cache: 'no-store' });
+    if (!res.ok) return;
+    const csvText = await res.text();
+    const rows = parseContentCSV(csvText);
+    rows.shift(); // header: key, Ubicación, Texto actual
+    let changed = false;
+    for (const cols of rows) {
+      const key = (cols[0] || '').trim();
+      const texto = cols[2];
+      if (!key || !texto || !texto.trim()) continue;
+      const el = document.querySelector(`[data-key="${CSS.escape(key)}"]`);
+      if (!el) continue;
+      // <meta> tags (SEO description) have no visible textContent — the
+      // actual text lives in their "content" attribute instead.
+      if (el.tagName === 'META') {
+        if (el.getAttribute('content') !== texto) {
+          el.setAttribute('content', texto);
+          changed = true;
+        }
+      } else if (el.textContent !== texto) {
+        el.textContent = texto;
+        changed = true;
+      }
+    }
+    if (changed) {
+      // Text swaps can change element heights (e.g. a longer testimonial
+      // quote) — let anything that measured layout on load (the
+      // testimonial carousel's height-lock) recompute against the final text.
+      window.dispatchEvent(new Event('content:updated'));
+    }
+  } catch (err) {
+    // Silent fail: the hardcoded HTML text already on the page is the
+    // fallback, so a network/parse error here should never break the site.
+  }
+}
+// .finally (not a bare call) so applyLocateHash below always runs after the
+// sheet fetch settles, whether it succeeded or silently failed -- otherwise
+// the locator tool could highlight stale HTML-default text/position instead
+// of the final sheet-resolved content.
+applyContentOverrides().finally(applyLocateHash);
+
 document.querySelectorAll('.nav-dropdown-toggle').forEach((toggle) => {
   const dropdown = toggle.closest('.nav-dropdown');
   toggle.addEventListener('click', (e) => {
@@ -111,6 +200,7 @@ if (testimonialTrack) {
   testimonialPrev.addEventListener('click', () => goToPage(current - 1));
   testimonialNext.addEventListener('click', () => goToPage(current + 1));
   window.addEventListener('resize', updateCarousel);
+  window.addEventListener('content:updated', updateCarousel);
   updateCarousel();
 
   // Web fonts (Instrument Serif / Inter) can swap in after this first
@@ -121,6 +211,37 @@ if (testimonialTrack) {
     document.fonts.ready.then(updateCarousel);
   }
 }
+
+// Herramienta interna de ubicación de texto (ubicar-texto.html): al abrir
+// una página con #locate=KEY en el hash, resalta y hace scroll al elemento
+// con ese data-key. No-op en cualquier carga normal del sitio (el hash
+// nunca trae ese formato salvo que venga de la herramienta interna).
+function applyLocateHash() {
+  const hash = window.location.hash;
+  if (!hash.startsWith('#locate=')) return;
+  const key = decodeURIComponent(hash.slice('#locate='.length));
+  const el = document.querySelector(`[data-key="${CSS.escape(key)}"]`);
+  if (!el) return;
+
+  // Si el elemento vive en una página no-activa del carrusel de
+  // testimonios, hay que cambiar de página antes de hacer scroll.
+  // updateCarousel/goToPage son locales al bloque de arriba, así que la
+  // única forma de invocarlas desde aquí es simular el click del dot
+  // correspondiente, que ya está conectado a goToPage.
+  const page = el.closest('.testimonial-page');
+  if (page && testimonialTrack && testimonialDots) {
+    const index = [...testimonialTrack.children].indexOf(page);
+    if (index > -1 && testimonialDots.children[index]) {
+      testimonialDots.children[index].click();
+    }
+  }
+
+  el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  el.classList.add('locate-highlight');
+  // Duración debe coincidir con la animación locate-pulse en css/style.css.
+  setTimeout(() => el.classList.remove('locate-highlight'), 2500);
+}
+window.addEventListener('hashchange', applyLocateHash);
 
 const form = document.getElementById('agendaForm');
 const submitBtn = document.getElementById('agendaSubmitBtn');

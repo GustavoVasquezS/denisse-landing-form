@@ -48,6 +48,18 @@ a:hover { color: var(--accent-dark); }
   outline-offset: 2px;
 }
 
+/* Herramienta interna ubicar-texto.html — resalte temporal al llegar via
+   #locate=KEY. Duración debe coincidir con el setTimeout en js/main.js. */
+.locate-highlight {
+  animation: locate-pulse 2.5s ease-out;
+  border-radius: 4px;
+}
+
+@keyframes locate-pulse {
+  0%   { box-shadow: 0 0 0 4px var(--gold-tint), var(--shadow-elegant); background-color: var(--gold-tint); }
+  100% { box-shadow: 0 0 0 0 transparent; background-color: transparent; }
+}
+
 .accent-italic {
   font-style: italic;
 }
