@@ -239,7 +239,7 @@ function applyLocateHash() {
   el.scrollIntoView({ behavior: 'smooth', block: 'center' });
   el.classList.add('locate-highlight');
   // Duración debe coincidir con la animación locate-pulse en css/style.css.
-  setTimeout(() => el.classList.remove('locate-highlight'), 2500);
+  setTimeout(() => el.classList.remove('locate-highlight'), 6000);
 }
 window.addEventListener('hashchange', applyLocateHash);
 
