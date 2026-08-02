@@ -1,0 +1,305 @@
+key,Ubicación,Texto actual
+global.nav.inicio,"Navegación (todas las páginas) → ""Inicio""",Inicio
+global.nav.sesiones,"Navegación (todas las páginas) → menú desplegable ""Sesiones""",Sesiones
+global.nav.sesiones_individual,Navegación → menú Sesiones → opción 1,Coaching Individual
+global.nav.sesiones_equipos,Navegación → menú Sesiones → opción 2,Coaching para Equipos y Organizaciones
+global.nav.sesiones_constelaciones,Navegación → menú Sesiones → opción 3,Constelaciones Sistémicas y Familiares
+global.nav.sesiones_pnl,Navegación → menú Sesiones → opción 4,Programación Neurolingüística (PNL)
+global.nav.curso,"Navegación → ""Curso""",Curso
+global.nav.libro,"Navegación → ""Libro""",Libro
+global.nav.agendar,"Navegación → botón principal (Inicio, Coaching Individual, Coaching Equipos, Constelaciones, PNL)",Agendar
+global.footer.copyright,Pie de página (todas las páginas) → texto de copyright,© 2026 Denisse Karmy · Coach Ontológico y Apreciativo
+global.footer.instagram,Pie de página → link Instagram,Instagram
+global.footer.linkedin,Pie de página → link LinkedIn,LinkedIn
+global.footer.facebook,Pie de página → link Facebook,Facebook
+global.footer.youtube,Pie de página → link YouTube,YouTube
+inicio.meta.titulo,Inicio → (SEO) Título de la pestaña del navegador,Denisse Karmy — Coach Ontológico y Apreciativo
+inicio.meta.descripcion,Inicio → (SEO) Descripción para buscadores,"Coaching Ontológico y Apreciativo, PNL y Constelaciones Sistémicas y Familiares con Denisse Karmy. Acompañamiento para personas, equipos y organizaciones en procesos de transformación."
+inicio.hero.eyebrow,Inicio → Hero → texto pequeño superior,Coach ontológico y apreciativo · PNL · Constelaciones Sistémicas y Familiares
+inicio.hero.titulo,Inicio → Hero → título principal (cita),"No cambio a las personas, las ayudo a recordar quiénes son cuando se atreven a mirar diferente."
+inicio.hero.subtitulo,Inicio → Hero → bajada,"Acompaño a personas, equipos y organizaciones en procesos de transformación personal y profesional."
+inicio.hero.boton_agendar,Inicio → Hero → botón 1,Agendar una sesión
+inicio.hero.boton_servicios,Inicio → Hero → botón 2,Conocer servicios
+inicio.hero.badge_cita,Inicio → Hero → foto → etiqueta destacada,Mirar diferente.
+inicio.hero.badge_sub,Inicio → Hero → foto → etiqueta destacada (subtítulo),El primer paso
+inicio.sobremi.titulo,Inicio → Sobre mí → título de sección,Sobre mí
+inicio.sobremi.tagline,Inicio → Sobre mí → frase destacada,Transformo desafíos en oportunidades de crecimiento y bienestar.
+inicio.sobremi.parrafo,Inicio → Sobre mí → párrafo principal,"Integro el Coaching Ontológico y Apreciativo, la Programación Neurolingüística (PNL) y las Constelaciones Sistémicas y Familiares para guiar procesos de cambio reales y sostenibles."
+inicio.sobremi.bullet1,Inicio → Sobre mí → viñeta 1 (ícono persona),"Acompaño a personas y equipos a descubrir su mejor versión, fortalecer sus relaciones y tomar decisiones con claridad, propósito y coherencia."
+inicio.sobremi.bullet2,Inicio → Sobre mí → viñeta 2 (ícono corazón),"Creo en el poder de una conversación significativa para abrir nuevas posibilidades, sanar vínculos y construir una vida con sentido."
+inicio.sobremi.bullet3,Inicio → Sobre mí → viñeta 3 (ícono libro),"Autora del libro La Verdad, Claves para tu Felicidad. Un libro profundo de autoayuda que explora junto a Denisse los intrincados caminos de la autoconciencia y el desarrollo personal para vivir en felicidad."
+inicio.sobremi.credencial1_titulo,Inicio → Sobre mí → tarjeta credencial 1 → título,Coach ontológico y apreciativo
+inicio.sobremi.credencial1_texto,Inicio → Sobre mí → tarjeta credencial 1 → texto,"Acompaño procesos desde una mirada integral, humana y orientada a soluciones."
+inicio.sobremi.credencial2_titulo,Inicio → Sobre mí → tarjeta credencial 2 → título,Facilitadora en PNL
+inicio.sobremi.credencial2_texto,Inicio → Sobre mí → tarjeta credencial 2 → texto,"Herramientas prácticas para transformar pensamientos, emociones y patrones conductuales, entre otros."
+inicio.sobremi.credencial3_titulo,Inicio → Sobre mí → tarjeta credencial 3 → título,Especialista en Constelaciones Sistémicas y Familiares
+inicio.sobremi.credencial3_texto,Inicio → Sobre mí → tarjeta credencial 3 → texto,"Te acompaño a comprender la dinámica de tus relaciones y a liberar aquello que ya no contribuye a tu crecimiento y bienestar, tanto en el ámbito personal como empresarial."
+inicio.sobremi.cita,Inicio → Sobre mí → cita de cierre,Tu historia puede cambiar. Y puedes comenzar hoy.
+inicio.sobremi.boton,Inicio → Sobre mí → botón,Agendar una sesión
+inicio.marquee.item1,Inicio → Franja de palabras → 1,Coherencia
+inicio.marquee.item2,Inicio → Franja de palabras → 2,Liderazgo
+inicio.marquee.item3,Inicio → Franja de palabras → 3,Consciencia
+inicio.marquee.item4,Inicio → Franja de palabras → 4,Vínculos
+inicio.marquee.item5,Inicio → Franja de palabras → 5,Gestión emocional
+inicio.marquee.item6,Inicio → Franja de palabras → 6,Transformación
+inicio.servicios.eyebrow,Inicio → Servicios → texto pequeño superior,Servicios
+inicio.servicios.titulo,Inicio → Servicios → título de sección,"Cuatro caminos, una misma búsqueda."
+inicio.servicios.card1_titulo,Inicio → Servicios → Tarjeta 1 (Coaching Individual) → título,Coaching Individual
+inicio.servicios.card1_texto,Inicio → Servicios → Tarjeta 1 → descripción,"Sesiones personalizadas para acompañarte en procesos de cambio, claridad y desarrollo personal. A través de un cambio del observador, descubrirás nuevas perspectivas que te permitirán comprender, gestionar y transformar tus emociones, abriendo nuevas posibilidades para tu vida."
+inicio.servicios.card2_titulo,Inicio → Servicios → Tarjeta 2 (Coaching Equipos) → título,Coaching para Equipos y Organizaciones
+inicio.servicios.card2_texto,Inicio → Servicios → Tarjeta 2 → descripción,"Transforma la manera en que tu organización se comunica, colabora y lidera. Diseñamos procesos que fortalecen el liderazgo, mejoran el compromiso de los equipos y aumentan la efectividad para alcanzar objetivos estratégicos."
+inicio.servicios.card3_titulo,Inicio → Servicios → Tarjeta 3 (Constelaciones) → título,Constelaciones Sistémicas y Familiares
+inicio.servicios.card3_texto,Inicio → Servicios → Tarjeta 3 → descripción,"Transforma tu presente comprendiendo el origen de lo que hoy limita tu vida. A través de las Constelaciones descubrirás cómo las dinámicas de tu familia y de los sistemas de los que formas parte influyen en tus relaciones, decisiones y bienestar. Al hacer visibles esos patrones, podrás generar cambios profundos y duraderos."
+inicio.servicios.card4_titulo,Inicio → Servicios → Tarjeta 4 (PNL) → título,Programación Neurolingüística (PNL)
+inicio.servicios.card4_texto,Inicio → Servicios → Tarjeta 4 → descripción,"Herramientas prácticas para transformar patrones de pensamiento, gestionar emociones y mejorar tu comunicación."
+inicio.curso.eyebrow,Inicio → Curso (adelanto) → texto pequeño superior,Curso online
+inicio.curso.titulo,Inicio → Curso (adelanto) → título,Viaje a tu Liberación
+inicio.curso.texto,Inicio → Curso (adelanto) → descripción,"Un recorrido para soltar creencias, patrones y cargas emocionales que te mantienen atrapado/a, y reencontrarte con la versión de ti que actúa desde la libertad."
+inicio.curso.boton_conocer,Inicio → Curso (adelanto) → botón 1,Conocer el curso
+inicio.curso.boton_comprar,Inicio → Curso (adelanto) → botón 2,Comprar el curso
+inicio.curso.video_placeholder,Inicio → Curso (adelanto) → texto del video pendiente,Video de YouTube del curso (próximamente)
+inicio.libro.eyebrow,Inicio → Libro (adelanto) → texto pequeño superior,"Libro · Denisse Karmy, autora"
+inicio.libro.titulo,Inicio → Libro (adelanto) → título,"La Verdad, Claves para tu Felicidad"
+inicio.libro.texto,Inicio → Libro (adelanto) → descripción,Un libro profundo de autoayuda que explora junto a Denisse los intrincados caminos de la autoconciencia y el desarrollo personal para vivir en felicidad.
+inicio.libro.boton,Inicio → Libro (adelanto) → botón,Conocer el libro
+inicio.testimonios.eyebrow,Inicio → Testimonios → texto pequeño superior,Testimonios
+inicio.testimonios.titulo,Inicio → Testimonios → título de sección,Palabras de quienes han caminado el proceso
+inicio.testimonios.t1_texto,Inicio → Testimonios → Testimonio 1 → cita,"Yo gracias a ti, Denisse, y a este curso he logrado en mí increíbles cambios. ¡Gracias!"
+inicio.testimonios.t1_autor,Inicio → Testimonios → Testimonio 1 → autora,María José Villavicencio
+inicio.testimonios.t2_texto,Inicio → Testimonios → Testimonio 2 → cita,"Denisse, agradezco profundamente este taller que está siendo tremendamente significativo y me ha ayudado muchísimo. Estoy súper agradecida de esta preciosa oportunidad de abrirnos entre todas, así ir sanando, creciendo, viéndonos y compartiendo con mis compañeras de este camino, que son mujeres tremendas."
+inicio.testimonios.t2_autor,Inicio → Testimonios → Testimonio 2 → autora,Javiera Encina
+inicio.testimonios.t3_texto,Inicio → Testimonios → Testimonio 3 → cita,"Linda Denisse, yo te agradezco de corazón lo bien que me ha hecho este taller. Soy una persona nueva, con herramientas que no conocía y que puedo ocupar en mi nueva yo."
+inicio.testimonios.t3_autor,Inicio → Testimonios → Testimonio 3 → autora,Yoly
+inicio.testimonios.t4_texto,Inicio → Testimonios → Testimonio 4 → cita,"Tu taller fue una experiencia muy mágica, cargada de energía femenina; un espacio para soltar y entregar muchas cosas que nos nublan la conciencia, nos enredan las emociones y nos desconectan del día a día. Sentí un gran alivio a 24 horas del taller respecto a mi ansiedad. Gracias por regalarme este espacio, para hacerme cariño y ser más consciente de mí, de mi entorno y de lo que realmente quiero."
+inicio.testimonios.t4_autor,Inicio → Testimonios → Testimonio 4 → autora,Ale
+inicio.faq.eyebrow,Inicio → Preguntas frecuentes → texto pequeño superior,Preguntas frecuentes
+inicio.faq.titulo,Inicio → Preguntas frecuentes → título de sección,Antes de empezar
+inicio.faq.p1_pregunta,Inicio → FAQ → Pregunta 1,¿Cómo son las primeras sesiones?
+inicio.faq.p1_respuesta,Inicio → FAQ → Respuesta 1,"Cada proceso es único. La cantidad de sesiones dependerá de tus objetivos y de la profundidad del tema a abordar. En muchos casos, los cambios comienzan a percibirse desde la primera sesión. En procesos organizacionales, el acompañamiento suele desarrollarse de ocho a más sesiones para lograr resultados sostenibles."
+inicio.faq.p2_pregunta,Inicio → FAQ → Pregunta 2,¿Las sesiones son online o presenciales?
+inicio.faq.p2_respuesta,Inicio → FAQ → Respuesta 2,"Ambas modalidades están disponibles, según lo que te acomode mejor."
+inicio.faq.p3_pregunta,Inicio → FAQ → Pregunta 3,¿Cuánto dura un proceso de coaching?
+inicio.faq.p3_respuesta,Inicio → FAQ → Respuesta 3,"Varía según cada persona y objetivo. En general, los procesos se trabajan a lo largo de varias sesiones durante algunas semanas o meses."
+inicio.faq.p4_pregunta,Inicio → FAQ → Pregunta 4,¿Qué es una constelación sistémica y familiar?
+inicio.faq.p4_respuesta,Inicio → FAQ → Respuesta 4,"Es un espacio de trabajo sistémico donde se representan vínculos y patrones —familiares, de pareja o de equipo— para sanar cargas heredadas y encontrar mayor claridad y libertad."
+inicio.agenda.eyebrow,Inicio → Contacto/Agenda → texto pequeño superior,Contacto
+inicio.agenda.titulo,Inicio → Contacto/Agenda → título de sección,Agenda tu sesión
+inicio.agenda.texto,Inicio → Contacto/Agenda → descripción,Cuéntame brevemente qué buscas y te contacto para coordinar horario.
+inicio.agenda.email,Inicio → Contacto/Agenda → correo,dkarmy@gmail.com
+inicio.agenda.instagram_texto,Inicio → Contacto/Agenda → texto del link de Instagram,Instagram: Corazones intuitivos. Denisse Karmy
+inicio.agenda.linkedin_texto,Inicio → Contacto/Agenda → texto del link de LinkedIn,LinkedIn: Denisse Karmy. Coach
+inicio.agenda.facebook_texto,Inicio → Contacto/Agenda → texto del link de Facebook,Facebook: Denisse Karmy
+inicio.agenda.form_label_nombre,Inicio → Formulario → etiqueta campo,Nombre
+inicio.agenda.form_label_correo,Inicio → Formulario → etiqueta campo,Correo
+inicio.agenda.form_label_telefono,Inicio → Formulario → etiqueta campo,Teléfono
+inicio.agenda.form_label_servicio,Inicio → Formulario → etiqueta campo,¿Cómo te puedo ayudar?
+inicio.agenda.form_label_mensaje,Inicio → Formulario → etiqueta campo,Mensaje (opcional)
+inicio.agenda.form_boton,Inicio → Formulario → botón enviar,Enviar solicitud
+inicio.agenda.exito_titulo,Inicio → Formulario → mensaje de éxito → título,¡Gracias!
+inicio.agenda.exito_texto,Inicio → Formulario → mensaje de éxito → texto,Recibí tu solicitud. Te contactaré pronto para coordinar tu sesión.
+individual.meta.titulo,Coaching Individual → (SEO) Título de la pestaña,Coaching Individual — Denisse Karmy
+individual.meta.descripcion,Coaching Individual → (SEO) Descripción para buscadores,"Sesiones de Coaching Individual con Denisse Karmy: procesos de cambio, claridad y desarrollo personal, uno a uno."
+individual.hero.eyebrow,Coaching Individual → Hero → texto pequeño superior,Sesiones · Coaching Individual
+individual.hero.titulo,Coaching Individual → Hero → título,Coaching Individual
+individual.hero.subtitulo,Coaching Individual → Hero → bajada,"Un espacio 1:1 para mirar diferente, ganar claridad y avanzar con decisiones propias."
+individual.hero.boton_agendar,Coaching Individual → Hero → botón 1,Agendar sesión
+individual.hero.boton_testimonios,Coaching Individual → Hero → botón 2,Ver testimonios
+individual.video.eyebrow,Coaching Individual → Testimonios en video → texto pequeño superior,Testimonios en video
+individual.video.titulo,Coaching Individual → Testimonios en video → título,Lo que dicen quienes ya vivieron el proceso
+individual.video.v1_autor,Coaching Individual → Testimonios en video → Video 1 → autor,Gustavo
+individual.video.v2_autor,Coaching Individual → Testimonios en video → Video 2 → autora,May
+individual.detalle.eyebrow,Coaching Individual → Sobre este servicio → texto pequeño superior,Sobre este servicio
+individual.detalle.titulo,Coaching Individual → Sobre este servicio → título,Cómo trabajamos
+individual.detalle.texto,Coaching Individual → Sobre este servicio → descripción,"Sesiones personalizadas para acompañarte en procesos de cambio, claridad y desarrollo personal. A través de un cambio del observador, descubrirás nuevas perspectivas que te permitirán comprender, gestionar y transformar tus emociones, abriendo nuevas posibilidades para tu vida."
+individual.cta.eyebrow,Coaching Individual → CTA intermedio → texto pequeño superior,Empecemos
+individual.cta.titulo,Coaching Individual → CTA intermedio → título,Da el primer paso
+individual.cta.boton,Coaching Individual → CTA intermedio → botón,Agendar sesión individual
+individual.beneficios.eyebrow,Coaching Individual → Cómo te ayuda → texto pequeño superior,Cómo te ayuda
+individual.beneficios.titulo,Coaching Individual → Cómo te ayuda → título,Coaching Individual con Denisse
+individual.beneficios.b1_titulo,Coaching Individual → Beneficio 1 → título,Claridad para decidir
+individual.beneficios.b1_texto,Coaching Individual → Beneficio 1 → texto,Sales de cada sesión con más claridad sobre lo que realmente quieres y los próximos pasos concretos para lograrlo.
+individual.beneficios.b2_titulo,Coaching Individual → Beneficio 2 → título,Gestión emocional real
+individual.beneficios.b2_texto,Coaching Individual → Beneficio 2 → texto,"Aprendes a reconocer y transformar emociones que hoy te bloquean, con herramientas que puedes seguir usando después del proceso."
+individual.beneficios.b3_titulo,Coaching Individual → Beneficio 3 → título,Un espacio solo para ti
+individual.beneficios.b3_texto,Coaching Individual → Beneficio 3 → texto,"Acompañamiento confidencial, a tu ritmo, sin juicio, para ordenar lo que hoy sientes que no tiene orden."
+individual.testimonios.eyebrow,Coaching Individual → Testimonios (texto) → texto pequeño superior,Testimonios
+individual.testimonios.titulo,Coaching Individual → Testimonios (texto) → título,Palabras de quienes han caminado el proceso
+individual.testimonios.t1_texto,Coaching Individual → Testimonios → Testimonio 1 → cita,"Linda Denisse, yo te agradezco de corazón lo bien que me ha hecho este taller. Soy una persona nueva, con herramientas que no conocía y que puedo ocupar en mi nueva yo."
+individual.testimonios.t1_autor,Coaching Individual → Testimonios → Testimonio 1 → autora,Yoly
+individual.testimonios.t2_texto,Coaching Individual → Testimonios → Testimonio 2 → cita,"Tu taller fue una experiencia muy mágica, cargada de energía femenina; un espacio para soltar y entregar muchas cosas que nos nublan la conciencia, nos enredan las emociones y nos desconectan del día a día. Sentí un gran alivio a 24 horas del taller respecto a mi ansiedad. Gracias por regalarme este espacio, para hacerme cariño y ser más consciente de mí, de mi entorno y de lo que realmente quiero."
+individual.testimonios.t2_autor,Coaching Individual → Testimonios → Testimonio 2 → autora,Ale
+individual.faq.eyebrow,Coaching Individual → FAQ → texto pequeño superior,Preguntas frecuentes
+individual.faq.titulo,Coaching Individual → FAQ → título,Antes de empezar
+individual.faq.p1_pregunta,Coaching Individual → FAQ → Pregunta 1,¿Cuántas sesiones voy a necesitar?
+individual.faq.p1_respuesta,Coaching Individual → FAQ → Respuesta 1,"Cada proceso es único. La cantidad de sesiones dependerá de tus objetivos y de la profundidad del tema a abordar; en muchos casos, los cambios comienzan a percibirse desde la primera sesión."
+individual.faq.p2_pregunta,Coaching Individual → FAQ → Pregunta 2,"¿Es solo para personas en crisis, o también sirve si ""estoy bien"" pero quiero más claridad?"
+individual.faq.p2_respuesta,Coaching Individual → FAQ → Respuesta 2,"Sirve para ambos casos. Muchas personas llegan sin una crisis puntual, simplemente buscando más claridad, propósito o coherencia en las decisiones que están tomando."
+individual.faq.p3_pregunta,Coaching Individual → FAQ → Pregunta 3,¿Las sesiones son online o presenciales?
+individual.faq.p3_respuesta,Coaching Individual → FAQ → Respuesta 3,"Ambas modalidades están disponibles, según lo que te acomode mejor."
+individual.faq.p4_pregunta,Coaching Individual → FAQ → Pregunta 4,¿Qué pasa si no siento conexión con el proceso?
+individual.faq.p4_respuesta,Coaching Individual → FAQ → Respuesta 4,La primera conversación es de exploración: conversamos sobre lo que buscas y evaluamos juntas si es un buen momento para comenzar. Puedes detener el proceso cuando lo necesites.
+equipos.meta.titulo,Coaching Equipos → (SEO) Título de la pestaña,Coaching para Equipos y Organizaciones — Denisse Karmy
+equipos.meta.descripcion,Coaching Equipos → (SEO) Descripción para buscadores,"Coaching para Equipos y Organizaciones con Denisse Karmy: procesos para fortalecer liderazgo, comunicación y efectividad organizacional."
+equipos.hero.eyebrow,Coaching Equipos → Hero → texto pequeño superior,Sesiones · Coaching para Equipos y Organizaciones
+equipos.hero.titulo,Coaching Equipos → Hero → título,Coaching para Equipos y Organizaciones
+equipos.hero.subtitulo,Coaching Equipos → Hero → bajada,"Procesos de coaching para que tu equipo lidere, comunique y logre más, juntos."
+equipos.hero.boton_agendar,Coaching Equipos → Hero → botón 1,Agendar para mi equipo
+equipos.hero.boton_testimonios,Coaching Equipos → Hero → botón 2,Ver testimonios
+equipos.video.eyebrow,Coaching Equipos → Testimonios en video → texto pequeño superior,Testimonios en video
+equipos.video.titulo,Coaching Equipos → Testimonios en video → título (placeholder),Próximamente
+equipos.video.placeholder_texto,Coaching Equipos → Testimonios en video → texto del recuadro pendiente,Video testimonio de este servicio (próximamente)
+equipos.video.intro_respaldo,Coaching Equipos → Testimonios en video → texto antes del testimonio de respaldo,"Mientras se suma un testimonio en video propio de este servicio, estas son las palabras de quienes ya han trabajado con Denisse:"
+equipos.video.testimonio_texto,Coaching Equipos → Testimonios en video → cita de respaldo,"Denisse, agradezco profundamente este taller que está siendo tremendamente significativo y me ha ayudado muchísimo. Estoy súper agradecida de esta preciosa oportunidad de abrirnos entre todas, así ir sanando, creciendo, viéndonos y compartiendo con mis compañeras de este camino, que son mujeres tremendas."
+equipos.video.testimonio_autor,Coaching Equipos → Testimonios en video → autora de la cita de respaldo,Javiera Encina
+equipos.detalle.eyebrow,Coaching Equipos → Sobre este servicio → texto pequeño superior,Sobre este servicio
+equipos.detalle.titulo,Coaching Equipos → Sobre este servicio → título,Cómo trabajamos
+equipos.detalle.texto,Coaching Equipos → Sobre este servicio → descripción,"Transforma la manera en que tu organización se comunica, colabora y lidera. Diseñamos procesos que fortalecen el liderazgo, mejoran el compromiso de los equipos y aumentan la efectividad para alcanzar objetivos estratégicos."
+equipos.cta.eyebrow,Coaching Equipos → CTA intermedio → texto pequeño superior,Empecemos
+equipos.cta.titulo,Coaching Equipos → CTA intermedio → título,Fortalece a tu equipo
+equipos.cta.boton,Coaching Equipos → CTA intermedio → botón,Agendar para mi equipo
+equipos.beneficios.eyebrow,Coaching Equipos → Cómo te ayuda → texto pequeño superior,Cómo te ayuda
+equipos.beneficios.titulo,Coaching Equipos → Cómo te ayuda → título,Coaching para Equipos y Organizaciones con Denisse
+equipos.beneficios.b1_titulo,Coaching Equipos → Beneficio 1 → título,Comunicación que fluye
+equipos.beneficios.b1_texto,Coaching Equipos → Beneficio 1 → texto,"Trabajamos las conversaciones difíciles y los malentendidos que hoy frenan a tu equipo, para que la comunicación deje de ser un obstáculo."
+equipos.beneficios.b2_titulo,Coaching Equipos → Beneficio 2 → título,Liderazgo con más impacto
+equipos.beneficios.b2_texto,Coaching Equipos → Beneficio 2 → texto,"Desarrollamos un liderazgo consciente que moviliza al equipo, en vez de solo dar instrucciones."
+equipos.beneficios.b3_titulo,Coaching Equipos → Beneficio 3 → título,Compromiso y efectividad
+equipos.beneficios.b3_texto,Coaching Equipos → Beneficio 3 → texto,"Un equipo más comprometido con sus objetivos, con mayor efectividad para lograr resultados sostenibles en el tiempo."
+equipos.testimonios.eyebrow,Coaching Equipos → Testimonios (texto) → texto pequeño superior,Testimonios
+equipos.testimonios.titulo,Coaching Equipos → Testimonios (texto) → título,Palabras de quienes han caminado el proceso
+equipos.testimonios.t1_texto,Coaching Equipos → Testimonios → Testimonio 1 → cita,"Yo gracias a ti, Denisse, y a este curso he logrado en mí increíbles cambios. ¡Gracias!"
+equipos.testimonios.t1_autor,Coaching Equipos → Testimonios → Testimonio 1 → autora,María José Villavicencio
+equipos.testimonios.t2_texto,Coaching Equipos → Testimonios → Testimonio 2 → cita,"Tu taller fue una experiencia muy mágica, cargada de energía femenina; un espacio para soltar y entregar muchas cosas que nos nublan la conciencia, nos enredan las emociones y nos desconectan del día a día. Sentí un gran alivio a 24 horas del taller respecto a mi ansiedad. Gracias por regalarme este espacio, para hacerme cariño y ser más consciente de mí, de mi entorno y de lo que realmente quiero."
+equipos.testimonios.t2_autor,Coaching Equipos → Testimonios → Testimonio 2 → autora,Ale
+equipos.faq.eyebrow,Coaching Equipos → FAQ → texto pequeño superior,Preguntas frecuentes
+equipos.faq.titulo,Coaching Equipos → FAQ → título,Antes de empezar
+equipos.faq.p1_pregunta,Coaching Equipos → FAQ → Pregunta 1,¿Cómo empieza un proceso para mi equipo u organización?
+equipos.faq.p1_respuesta,Coaching Equipos → FAQ → Respuesta 1,"Comenzamos con una conversación inicial para entender el contexto de tu equipo, los desafíos actuales y los objetivos que buscas, y desde ahí diseñamos el proceso a medida."
+equipos.faq.p2_pregunta,Coaching Equipos → FAQ → Pregunta 2,¿Cuánto dura un proceso organizacional?
+equipos.faq.p2_respuesta,Coaching Equipos → FAQ → Respuesta 2,"En procesos organizacionales, el acompañamiento suele desarrollarse de ocho a más sesiones para lograr resultados sostenibles."
+equipos.faq.p3_pregunta,Coaching Equipos → FAQ → Pregunta 3,¿Funciona para equipos pequeños o solo para grandes organizaciones?
+equipos.faq.p3_respuesta,Coaching Equipos → FAQ → Respuesta 3,Funciona para equipos de cualquier tamaño; el proceso se adapta a la realidad y necesidades específicas de tu organización.
+equipos.faq.p4_pregunta,Coaching Equipos → FAQ → Pregunta 4,¿Las sesiones son presenciales o remotas?
+equipos.faq.p4_respuesta,Coaching Equipos → FAQ → Respuesta 4,"Ambas modalidades están disponibles, según lo que le acomode mejor a tu equipo."
+constelaciones.meta.titulo,Constelaciones → (SEO) Título de la pestaña,Constelaciones Sistémicas y Familiares — Denisse Karmy
+constelaciones.meta.descripcion,Constelaciones → (SEO) Descripción para buscadores,Constelaciones Sistémicas y Familiares con Denisse Karmy: sana patrones familiares y relacionales que hoy limitan tu vida.
+constelaciones.hero.eyebrow,Constelaciones → Hero → texto pequeño superior,Sesiones · Constelaciones Sistémicas y Familiares
+constelaciones.hero.titulo,Constelaciones → Hero → título,Constelaciones Sistémicas y Familiares
+constelaciones.hero.subtitulo,Constelaciones → Hero → bajada,"Comprende el origen de lo que hoy te limita, y libera lo que ya no te pertenece."
+constelaciones.hero.boton_agendar,Constelaciones → Hero → botón 1,Agendar constelación
+constelaciones.hero.boton_testimonios,Constelaciones → Hero → botón 2,Ver testimonios
+constelaciones.video.eyebrow,Constelaciones → Testimonios en video → texto pequeño superior,Testimonios en video
+constelaciones.video.titulo,Constelaciones → Testimonios en video → título,Lo que dice quien ya vivió el proceso
+constelaciones.video.v1_autor,Constelaciones → Testimonios en video → Video 1 → autora,Paola Fassino
+constelaciones.detalle.eyebrow,Constelaciones → Sobre este servicio → texto pequeño superior,Sobre este servicio
+constelaciones.detalle.titulo,Constelaciones → Sobre este servicio → título,Cómo trabajamos
+constelaciones.detalle.texto,Constelaciones → Sobre este servicio → descripción,"Transforma tu presente comprendiendo el origen de lo que hoy limita tu vida. A través de las Constelaciones descubrirás cómo las dinámicas de tu familia y de los sistemas de los que formas parte influyen en tus relaciones, decisiones y bienestar. Al hacer visibles esos patrones, podrás generar cambios profundos y duraderos."
+constelaciones.cta.eyebrow,Constelaciones → CTA intermedio → texto pequeño superior,Empecemos
+constelaciones.cta.titulo,Constelaciones → CTA intermedio → título,Libera lo que ya no te pertenece
+constelaciones.cta.boton,Constelaciones → CTA intermedio → botón,Agendar constelación
+constelaciones.beneficios.eyebrow,Constelaciones → Cómo te ayuda → texto pequeño superior,Cómo te ayuda
+constelaciones.beneficios.titulo,Constelaciones → Cómo te ayuda → título,Constelaciones Sistémicas y Familiares con Denisse
+constelaciones.beneficios.b1_titulo,Constelaciones → Beneficio 1 → título,Ves lo que antes era invisible
+constelaciones.beneficios.b1_texto,Constelaciones → Beneficio 1 → texto,"Hacemos visibles las dinámicas y lealtades familiares que hoy operan sin que te des cuenta, y que influyen en tus decisiones y relaciones."
+constelaciones.beneficios.b2_titulo,Constelaciones → Beneficio 2 → título,Sanas cargas heredadas
+constelaciones.beneficios.b2_texto,Constelaciones → Beneficio 2 → texto,Trabajamos aquello que arrastras de tu historia familiar para que dejes de repetir patrones que ya no te sirven.
+constelaciones.beneficios.b3_titulo,Constelaciones → Beneficio 3 → título,Cambios profundos y duraderos
+constelaciones.beneficios.b3_texto,Constelaciones → Beneficio 3 → texto,"Al hacer visibles esos patrones, generas cambios que se sostienen en el tiempo, más allá de la sesión misma."
+constelaciones.faq.eyebrow,Constelaciones → FAQ → texto pequeño superior,Preguntas frecuentes
+constelaciones.faq.titulo,Constelaciones → FAQ → título,Antes de empezar
+constelaciones.faq.p1_pregunta,Constelaciones → FAQ → Pregunta 1,¿Qué es una constelación sistémica y familiar?
+constelaciones.faq.p1_respuesta,Constelaciones → FAQ → Respuesta 1,"Es un espacio de trabajo sistémico donde se representan vínculos y patrones —familiares, de pareja o de equipo— para sanar cargas heredadas y encontrar mayor claridad y libertad."
+constelaciones.faq.p2_pregunta,Constelaciones → FAQ → Pregunta 2,¿Es necesario que asista mi familia a la sesión?
+constelaciones.faq.p2_respuesta,Constelaciones → FAQ → Respuesta 2,"No. El trabajo se realiza contigo, representando los vínculos y dinámicas familiares en el espacio de la sesión, sin necesidad de que otros miembros de tu familia estén presentes."
+constelaciones.faq.p3_pregunta,Constelaciones → FAQ → Pregunta 3,¿Es compatible con terapia o coaching que ya estoy haciendo?
+constelaciones.faq.p3_respuesta,Constelaciones → FAQ → Respuesta 3,"Sí, las Constelaciones son un complemento habitual de otros procesos de terapia o coaching, no un reemplazo."
+constelaciones.faq.p4_pregunta,Constelaciones → FAQ → Pregunta 4,¿Las sesiones son individuales o grupales?
+constelaciones.faq.p4_respuesta,Constelaciones → FAQ → Respuesta 4,"Ambas modalidades están disponibles, según lo que se ajuste mejor a tu proceso."
+pnl.meta.titulo,PNL → (SEO) Título de la pestaña,Programación Neurolingüística (PNL) — Denisse Karmy
+pnl.meta.descripcion,PNL → (SEO) Descripción para buscadores,"Programación Neurolingüística (PNL) con Denisse Karmy: herramientas prácticas para transformar patrones de pensamiento, emociones y comunicación."
+pnl.hero.eyebrow,PNL → Hero → texto pequeño superior,Sesiones · Programación Neurolingüística (PNL)
+pnl.hero.titulo,PNL → Hero → título,Programación Neurolingüística (PNL)
+pnl.hero.subtitulo,PNL → Hero → bajada,"Herramientas concretas para cambiar cómo piensas, sientes y te comunicas."
+pnl.hero.boton_agendar,PNL → Hero → botón 1,Agendar sesión
+pnl.hero.boton_testimonios,PNL → Hero → botón 2,Ver testimonios
+pnl.video.eyebrow,PNL → Testimonios en video → texto pequeño superior,Testimonios en video
+pnl.video.titulo,PNL → Testimonios en video → título (placeholder),Próximamente
+pnl.video.placeholder_texto,PNL → Testimonios en video → texto del recuadro pendiente,Video testimonio de este servicio (próximamente)
+pnl.video.intro_respaldo,PNL → Testimonios en video → texto antes del testimonio de respaldo,"Mientras se suma un testimonio en video propio de este servicio, estas son las palabras de quienes ya han trabajado con Denisse:"
+pnl.video.testimonio_texto,PNL → Testimonios en video → cita de respaldo,"Linda Denisse, yo te agradezco de corazón lo bien que me ha hecho este taller. Soy una persona nueva, con herramientas que no conocía y que puedo ocupar en mi nueva yo."
+pnl.video.testimonio_autor,PNL → Testimonios en video → autora de la cita de respaldo,Yoly
+pnl.detalle.eyebrow,PNL → Sobre este servicio → texto pequeño superior,Sobre este servicio
+pnl.detalle.titulo,PNL → Sobre este servicio → título,Cómo trabajamos
+pnl.detalle.texto,PNL → Sobre este servicio → descripción,"La Programación Neurolingüística (PNL) es un conjunto de herramientas prácticas para identificar y transformar los patrones de pensamiento, lenguaje y conducta que hoy te limitan. A través de técnicas concretas, trabajamos tu forma de comunicarte, de gestionar tus emociones y de relacionarte contigo mismo/a y con otros, generando cambios que puedes empezar a aplicar desde la primera sesión."
+pnl.cta.eyebrow,PNL → CTA intermedio → texto pequeño superior,Empecemos
+pnl.cta.titulo,PNL → CTA intermedio → título,Empieza a cambiar tus patrones
+pnl.cta.boton,PNL → CTA intermedio → botón,Agendar sesión
+pnl.beneficios.eyebrow,PNL → Cómo te ayuda → texto pequeño superior,Cómo te ayuda
+pnl.beneficios.titulo,PNL → Cómo te ayuda → título,Programación Neurolingüística con Denisse
+pnl.beneficios.b1_titulo,PNL → Beneficio 1 → título,"Herramientas, no solo teoría"
+pnl.beneficios.b1_texto,PNL → Beneficio 1 → texto,"Técnicas concretas que puedes empezar a aplicar en tu día a día desde la primera sesión, no solo conceptos."
+pnl.beneficios.b2_titulo,PNL → Beneficio 2 → título,Más control sobre tus emociones
+pnl.beneficios.b2_texto,PNL → Beneficio 2 → texto,Identificas qué patrones disparan tus emociones y aprendes a gestionarlas en vez de que ellas te gestionen a ti.
+pnl.beneficios.b3_titulo,PNL → Beneficio 3 → título,Comunicación más efectiva
+pnl.beneficios.b3_texto,PNL → Beneficio 3 → texto,"Mejoras la forma en que te expresas y te relacionas, tanto en lo personal como en lo laboral."
+pnl.testimonios.eyebrow,PNL → Testimonios (texto) → texto pequeño superior,Testimonios
+pnl.testimonios.titulo,PNL → Testimonios (texto) → título,Palabras de quienes han caminado el proceso
+pnl.testimonios.t1_texto,PNL → Testimonios → Testimonio 1 → cita,"Yo gracias a ti, Denisse, y a este curso he logrado en mí increíbles cambios. ¡Gracias!"
+pnl.testimonios.t1_autor,PNL → Testimonios → Testimonio 1 → autora,María José Villavicencio
+pnl.testimonios.t2_texto,PNL → Testimonios → Testimonio 2 → cita,"Denisse, agradezco profundamente este taller que está siendo tremendamente significativo y me ha ayudado muchísimo. Estoy súper agradecida de esta preciosa oportunidad de abrirnos entre todas, así ir sanando, creciendo, viéndonos y compartiendo con mis compañeras de este camino, que son mujeres tremendas."
+pnl.testimonios.t2_autor,PNL → Testimonios → Testimonio 2 → autora,Javiera Encina
+pnl.testimonios.v3_autor,PNL → Testimonios → Video 3 → autor,Philippe Adduard
+pnl.faq.eyebrow,PNL → FAQ → texto pequeño superior,Preguntas frecuentes
+pnl.faq.titulo,PNL → FAQ → título,Antes de empezar
+pnl.faq.p1_pregunta,PNL → FAQ → Pregunta 1,¿Qué es exactamente la PNL y en qué se diferencia del coaching?
+pnl.faq.p1_respuesta,PNL → FAQ → Respuesta 1,"Mi trabajo integra, según la necesidad del cliente, al Coaching Ontológico y Apreciativo con la PNL; la PNL aporta herramientas concretas de lenguaje y conducta que se suman al proceso de coaching para potenciar los resultados."
+pnl.faq.p2_pregunta,PNL → FAQ → Pregunta 2,¿Necesito saber algo de PNL antes de empezar?
+pnl.faq.p2_respuesta,PNL → FAQ → Respuesta 2,"No, no se requiere ningún conocimiento previo. Las técnicas se explican y aplican durante la propia sesión."
+pnl.faq.p3_pregunta,PNL → FAQ → Pregunta 3,¿En cuántas sesiones se ven resultados?
+pnl.faq.p3_respuesta,PNL → FAQ → Respuesta 3,Varía según cada persona y objetivo; en muchos casos los cambios comienzan a percibirse desde la primera sesión.
+pnl.faq.p4_pregunta,PNL → FAQ → Pregunta 4,¿Sirve para temas puntuales o solo para procesos largos?
+pnl.faq.p4_respuesta,PNL → FAQ → Respuesta 4,"Sirve para ambos casos: se puede trabajar un tema puntual en pocas sesiones, o integrarlo a un proceso más amplio de coaching."
+curso.meta.titulo,Curso → (SEO) Título de la pestaña,Viaje a tu Liberación — Curso online de Denisse Karmy
+curso.meta.descripcion,Curso → (SEO) Descripción para buscadores,"Viaje a tu Liberación: curso online de Denisse Karmy para soltar creencias, patrones y cargas emocionales, y reencontrarte con tu versión más libre."
+curso.nav.boton,"Curso → Navegación → botón principal (reemplaza ""Agendar"")",Comprar el curso
+curso.hero.eyebrow,Curso → Hero → texto pequeño superior,Curso online
+curso.hero.titulo,Curso → Hero → título,Viaje a tu Liberación
+curso.hero.texto,Curso → Hero → descripción,"Un recorrido para soltar creencias, patrones y cargas emocionales que te mantienen atrapado/a, y reencontrarte con la versión de ti que actúa desde la libertad."
+curso.hero.boton,Curso → Hero → botón,Comprar el curso
+curso.hero.video_placeholder,Curso → Hero → texto del video pendiente,Video de YouTube del curso (próximamente)
+curso.incluye.titulo,Curso → Qué incluye → título de sección,Qué incluye
+curso.incluye.contenido_titulo,"Curso → Qué incluye → columna ""Contenido"" → título",Contenido
+curso.incluye.contenido_texto,"Curso → Qué incluye → columna ""Contenido"" → texto","Módulo 1: Autoconocimiento · Módulo 2: Soltar creencias limitantes · Módulo 3: Gestión emocional · Módulo 4: Integración y nuevos hábitos. (contenido genérico, a definir)"
+curso.incluye.valor_titulo,"Curso → Qué incluye → columna ""Valor"" → título",Valor
+curso.incluye.valor_texto,"Curso → Qué incluye → columna ""Valor"" → texto","$XX.XXX (precio referencial, a confirmar)"
+curso.incluye.pago_titulo,"Curso → Qué incluye → columna ""Medios de pago"" → título",Medios de pago
+curso.incluye.pago_texto,"Curso → Qué incluye → columna ""Medios de pago"" → texto","Transferencia bancaria, tarjeta de crédito/débito (WebPay), MercadoPago (por definir)"
+curso.testimonios.eyebrow,Curso → Testimonios → texto pequeño superior,Testimonios
+curso.testimonios.titulo,Curso → Testimonios → título de sección,Palabras de quienes han tomado el curso
+curso.testimonios.t1_autor,Curso → Testimonios → Video 1 → autoras,Alumnas del curso
+curso.testimonios.t2_texto,Curso → Testimonios → Testimonio 2 (con video) → cita,"Yo gracias a ti, Denisse, y a este curso he logrado en mí increíbles cambios. ¡Gracias!"
+curso.testimonios.t2_autor,Curso → Testimonios → Testimonio 2 (con video) → autora,María José Villavicencio
+curso.testimonios.t3_texto,Curso → Testimonios → Testimonio 3 → cita,"Denisse, agradezco profundamente este taller que está siendo tremendamente significativo y me ha ayudado muchísimo. Estoy súper agradecida de esta preciosa oportunidad de abrirnos entre todas, así ir sanando, creciendo, viéndonos y compartiendo con mis compañeras de este camino, que son mujeres tremendas."
+curso.testimonios.t3_autor,Curso → Testimonios → Testimonio 3 → autora,Javiera Encina
+curso.testimonios.t4_autor,Curso → Testimonios → Video 4 → autora,Coté
+curso.testimonios.t5_texto,Curso → Testimonios → Testimonio 5 → cita,"Tu taller fue una experiencia muy mágica, cargada de energía femenina; un espacio para soltar y entregar muchas cosas que nos nublan la conciencia, nos enredan las emociones y nos desconectan del día a día. Sentí un gran alivio a 24 horas del taller respecto a mi ansiedad. Gracias por regalarme este espacio, para hacerme cariño y ser más consciente de mí, de mi entorno y de lo que realmente quiero."
+curso.testimonios.t5_autor,Curso → Testimonios → Testimonio 5 → autora,Ale
+curso.testimonios.t6_autor,Curso → Testimonios → Video 6 → autora,Paola Fassino
+curso.testimonios.t7_autor,Curso → Testimonios → Video 7 → autora,Carolina Palacios
+curso.testimonios.link_faq,Curso → Testimonios → link a preguntas frecuentes,¿Tienes más preguntas? Revisa las preguntas frecuentes
+curso.cta.eyebrow,Curso → CTA final → texto pequeño superior,Cupos limitados
+curso.cta.titulo,Curso → CTA final → título,Empieza el viaje a tu liberación
+curso.cta.boton,Curso → CTA final → botón,Comprar el curso
+libro.meta.titulo,Libro → (SEO) Título de la pestaña,"La Verdad, Claves para tu Felicidad — Libro de Denisse Karmy"
+libro.meta.descripcion,Libro → (SEO) Descripción para buscadores,"La Verdad, Claves para tu Felicidad: el libro de Denisse Karmy sobre autoconciencia y desarrollo personal. Disponible en Amazon."
+libro.nav.boton,"Libro → Navegación → botón principal (reemplaza ""Agendar"")",Comprar libro
+libro.hero.eyebrow,Libro → Hero → texto pequeño superior,"Libro · Denisse Karmy, autora"
+libro.hero.titulo,Libro → Hero → título,"La Verdad, Claves para tu Felicidad"
+libro.hero.texto,Libro → Hero → descripción,"Un libro profundo de autoayuda que explora junto a Denisse los intrincados caminos de la autoconciencia y el desarrollo personal para vivir en felicidad. La Verdad te invita a sumergirte en un viaje hacia tu verdad interior, donde encontrarás valiosas perspectivas sobre cómo alcanzar una vida más auténtica y significativa."
+libro.hero.boton,Libro → Hero → botón,Comprar el libro
+libro.autora.titulo,Libro → Sobre la autora → título,Sobre la autora
+libro.autora.texto,Libro → Sobre la autora → texto,"Denisse Karmy es Coach Ontológica y Apreciativa, facilitadora de PNL y de Constelaciones Sistémicas y Familiares, con más de 20 años de experiencia acompañando procesos de cambio personal, de liderazgo y de fortalecimiento de relaciones."
+libro.autora.boton,Libro → Sobre la autora → link,Conocer más sobre Denisse
+libro.cta.eyebrow,Libro → CTA final → texto pequeño superior,¿Tienes dudas antes de comprar?
+libro.cta.titulo,Libro → CTA final → título,Escríbeme y conversemos
+libro.cta.boton,Libro → CTA final → botón,Contactar a Denisse
