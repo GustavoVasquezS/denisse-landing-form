@@ -59,24 +59,22 @@
   </div>
 </section>
 
-<!-- Testimonio en video removido momentáneamente a pedido del cliente: no
-     habrá video propio de este servicio por ahora. Las keys
-     equipos.video.eyebrow/titulo/placeholder_texto/intro_respaldo/
-     testimonio_texto/testimonio_autor quedan huérfanas en el CSV/hoja, sin
-     borrar (todas tenían valores viejos -- "Testimonios en video",
-     "Próximamente", la cita de Javiera Encina, que no correspondía
-     realmente a este servicio). Esta sección reutiliza el mismo elemento
-     visual pero con keys NUEVAS (equipos.testimonios_pendiente.*), que no
-     existen todavía en la hoja -- así el texto de abajo se ve tal cual,
-     sin que un valor viejo de la hoja lo pise. -->
 <section class="section" aria-labelledby="testimonios-video-equipos-h">
-  <p class="eyebrow" data-key="equipos.testimonios_pendiente.eyebrow">Testimonios</p>
-  <h2 id="testimonios-video-equipos-h" data-key="equipos.testimonios_pendiente.titulo">Lo que dicen quienes ya trabajaron con Denisse</h2>
-  <blockquote class="card testimonial">
-    <span class="quote-mark" aria-hidden="true">&#8221;</span>
-    <p>&ldquo;<span data-key="equipos.testimonios_pendiente.texto">[Testimonio pendiente de reemplazo: agregar una cita real de un cliente de Coaching para Equipos y Organizaciones.]</span>&rdquo;</p>
-    <cite>— <span data-key="equipos.testimonios_pendiente.autor">Nombre Apellido</span></cite>
-  </blockquote>
+  <p class="eyebrow" data-key="equipos.video.eyebrow">Testimonios en video</p>
+  <h2 id="testimonios-video-equipos-h" data-key="equipos.video.titulo">Próximamente</h2>
+  <!-- Gap real: aun no existe testimonio en video especifico de este servicio.
+       No reasignar un video de otro servicio ni fabricar uno nuevo. -->
+  <div class="video-gap">
+    <div class="video-placeholder">
+      <span data-key="equipos.video.placeholder_texto">Video testimonio de este servicio (próximamente)</span>
+    </div>
+    <p class="body-copy mt-lg" data-key="equipos.video.intro_respaldo">Mientras se suma un testimonio en video propio de este servicio, estas son las palabras de quienes ya han trabajado con Denisse:</p>
+    <blockquote class="card testimonial">
+      <span class="quote-mark" aria-hidden="true">&#8221;</span>
+      <p>&ldquo;<span data-key="equipos.video.testimonio_texto">Denisse, agradezco profundamente este taller que está siendo tremendamente significativo y me ha ayudado muchísimo. Estoy súper agradecida de esta preciosa oportunidad de abrirnos entre todas, así ir sanando, creciendo, viéndonos y compartiendo con mis compañeras de este camino, que son mujeres tremendas.</span>&rdquo;</p>
+      <cite>— <span data-key="equipos.video.testimonio_autor">Javiera Encina</span></cite>
+    </blockquote>
+  </div>
 </section>
 
 <section class="section section-narrow" aria-labelledby="equipos-detalle-h">

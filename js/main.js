@@ -115,6 +115,63 @@ document.addEventListener('keydown', (e) => {
   });
 });
 
+// Botón CTA flotante -- prueba en curso, ver si aporta a la conversión.
+// Clona el .nav-btn existente (texto + link) en vez de tener una lista
+// aparte por página, así queda igual de correcto en las 7 páginas y sigue
+// el contenido en vivo de la hoja sin trabajo extra.
+const navBtn = document.querySelector('.nav-btn');
+if (navBtn) {
+  const floatingCta = document.createElement('a');
+  floatingCta.className = 'btn btn-gold floating-cta';
+  floatingCta.href = navBtn.getAttribute('href');
+  const navBtnTarget = navBtn.getAttribute('target');
+  if (navBtnTarget) floatingCta.setAttribute('target', navBtnTarget);
+  const navBtnRel = navBtn.getAttribute('rel');
+  if (navBtnRel) floatingCta.setAttribute('rel', navBtnRel);
+  floatingCta.textContent = navBtn.textContent;
+  document.body.appendChild(floatingCta);
+
+  // Si la hoja trae un texto distinto para el botón del nav, que el
+  // flotante lo refleje también.
+  window.addEventListener('content:updated', () => {
+    floatingCta.textContent = navBtn.textContent;
+  });
+
+  // Umbral de scroll (px) antes de mostrar el botón -- ajustar acá durante
+  // las pruebas si hace falta que aparezca antes/después.
+  const FLOATING_CTA_SCROLL_THRESHOLD = 500;
+  let footerVisible = false;
+  let floatingCtaTicking = false;
+  function updateFloatingCtaVisibility() {
+    const shouldShow = window.scrollY > FLOATING_CTA_SCROLL_THRESHOLD && !footerVisible;
+    floatingCta.classList.toggle('visible', shouldShow);
+    // En mobile el botón pasa a ser una barra de ancho completo pegada
+    // abajo (ver css/style.css) -- esta clase reserva el espacio
+    // equivalente en el body para que el contenido nunca quede tapado
+    // detrás, en vez de perseguir cada sección larga con la que podría
+    // chocar el botón flotante de escritorio.
+    document.body.classList.toggle('floating-cta-visible', shouldShow);
+    floatingCtaTicking = false;
+  }
+  window.addEventListener('scroll', () => {
+    if (!floatingCtaTicking) {
+      requestAnimationFrame(updateFloatingCtaVisibility);
+      floatingCtaTicking = true;
+    }
+  }, { passive: true });
+  updateFloatingCtaVisibility();
+
+  // Ocultar al llegar al footer -- en mobile el botón tapaba los links de
+  // Instagram/LinkedIn ahí abajo.
+  const siteFooter = document.querySelector('.site-footer');
+  if (siteFooter && 'IntersectionObserver' in window) {
+    new IntersectionObserver((entries) => {
+      footerVisible = entries[0].isIntersecting;
+      updateFloatingCtaVisibility();
+    }).observe(siteFooter);
+  }
+}
+
 const cursoToggle = document.getElementById('cursoToggle');
 const cursoDetails = document.getElementById('cursoDetails');
 

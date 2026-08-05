@@ -48,7 +48,7 @@
       <div>
         <p class="eyebrow eyebrow-tight" data-key="individual.hero.eyebrow">Sesiones · Coaching Individual</p>
         <h1 id="individual-hero-h" class="curso-title" data-key="individual.hero.titulo">Coaching <em class="accent-italic">Individual</em></h1>
-        <p class="body-copy" data-key="individual.hero.subtitulo">Es un proceso estructurado 1:1, en vivo (vía Zoom), basado en coaching ontológico profesional y/o apreciativo. A través de preguntas poderosas y retroalimentación experta, descubrirás cómo mirar diferente, ganar claridad y avanzar con decisiones propias.</p>
+        <p class="body-copy" data-key="individual.hero.subtitulo">Un espacio 1:1 para mirar diferente, ganar claridad y avanzar con decisiones propias.</p>
         <div class="curso-actions">
           <a href="index.html#agenda?servicio=individual" class="btn btn-accent-dark"><span data-key="individual.hero.boton_agendar">Agendar sesión</span> &#8594;</a>
           <a href="#testimonios-video-individual-h" class="btn btn-outline" data-key="individual.hero.boton_testimonios">Ver testimonios</a>
@@ -56,29 +56,46 @@
       </div>
       <img src="img/foto_coaching_individual.webp" alt="Coaching Individual">
     </div>
-    <!-- Complemento estructural del hero, fuera del sistema data-key/Sheets. -->
-    <div class="ideal-para">
-      <p class="ideal-para-title">Ideal para:</p>
-      <div class="ideal-para-grid">
-        <ul>
-          <li>Resolver un quiebre puntual.</li>
-          <li>Desbloquear una meta específica.</li>
-          <li>Iniciar tu proceso de transformación.</li>
-        </ul>
-        <ul>
-          <li>Transformación más profunda.</li>
-          <li>Cambio de identidad sostenido.</li>
-          <li>Objetivos estratégicos de alto impacto.</li>
-        </ul>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="testimonios-video-individual-h">
+  <p class="eyebrow" data-key="individual.video.eyebrow">Testimonios en video</p>
+  <h2 id="testimonios-video-individual-h" data-key="individual.video.titulo">Lo que dicen quienes ya <em class="accent-italic">vivieron el proceso</em></h2>
+  <div class="card-grid">
+    <article class="card video-testimonial">
+      <div class="video-testimonial-frame">
+        <button type="button" class="video-thumb" data-video-id="2hPxSOg3gz8" aria-label="Reproducir testimonio en video de Gustavo">
+          <img src="https://i.ytimg.com/vi/2hPxSOg3gz8/hqdefault.jpg" alt="" loading="lazy">
+          <span class="play-btn" aria-hidden="true">&#9658;</span>
+        </button>
       </div>
-    </div>
+      <cite>— <span data-key="individual.video.v1_autor">Gustavo</span></cite>
+    </article>
+    <article class="card video-testimonial">
+      <div class="video-testimonial-frame">
+        <button type="button" class="video-thumb" data-video-id="nwddtqAZ4bE" aria-label="Reproducir testimonio en video de May">
+          <img src="https://i.ytimg.com/vi/nwddtqAZ4bE/hqdefault.jpg" alt="" loading="lazy">
+          <span class="play-btn" aria-hidden="true">&#9658;</span>
+        </button>
+      </div>
+      <cite>— <span data-key="individual.video.v2_autor">May</span></cite>
+    </article>
   </div>
 </section>
 
 <section class="section section-narrow" aria-labelledby="individual-detalle-h">
   <p class="eyebrow" data-key="individual.detalle.eyebrow">Sobre este servicio</p>
   <h2 id="individual-detalle-h" data-key="individual.detalle.titulo">Cómo trabajamos</h2>
-  <p class="body-copy" data-key="individual.detalle.texto">Sesiones personalizadas para acompañarte en procesos de cambio, claridad y desarrollo personal. A través de un cambio del observador, descubrirás nuevas perspectivas que te permitirán comprender, gestionar y transformar tus emociones, forma de pensar y tu corporalidad, abriendo nuevas posibilidades para tu vida.</p>
+  <p class="body-copy" data-key="individual.detalle.texto">Sesiones personalizadas para acompañarte en procesos de cambio, claridad y desarrollo personal. A través de un cambio del observador, descubrirás nuevas perspectivas que te permitirán comprender, gestionar y transformar tus emociones, abriendo nuevas posibilidades para tu vida.</p>
+</section>
+
+<section class="section-dark" aria-labelledby="individual-cta-h">
+  <div class="section text-center">
+    <p class="eyebrow" data-key="individual.cta.eyebrow">Empecemos</p>
+    <h2 id="individual-cta-h" data-key="individual.cta.titulo">Da el primer paso</h2>
+    <a href="index.html#agenda?servicio=individual" class="btn btn-gold" data-key="individual.cta.boton">Agendar sesión individual</a>
+  </div>
 </section>
 
 <!-- Copy borrador: Denisse debe revisar estos beneficios antes de publicar. -->
@@ -112,61 +129,32 @@
 
 <!-- Seccion de valores/medios de pago omitida a proposito: no hay precios definidos para este servicio aun. Agregar cuando Denisse confirme tarifas. -->
 
-<section class="section" aria-labelledby="testimonios-video-individual-h">
-  <p class="eyebrow" data-key="individual.video.eyebrow">Testimonios en video</p>
-  <h2 id="testimonios-video-individual-h" data-key="individual.video.titulo">Lo que dicen quienes ya <em class="accent-italic">vivieron el proceso</em></h2>
-  <div class="card-grid">
-    <article class="card video-testimonial">
-      <div class="video-testimonial-frame">
-        <button type="button" class="video-thumb" data-video-id="2hPxSOg3gz8" aria-label="Reproducir testimonio en video de Gustavo">
-          <img src="https://i.ytimg.com/vi/2hPxSOg3gz8/hqdefault.jpg" alt="" loading="lazy">
-          <span class="play-btn" aria-hidden="true">&#9658;</span>
-        </button>
-      </div>
-      <cite>— <span data-key="individual.video.v1_autor">Gustavo</span></cite>
-    </article>
-    <article class="card video-testimonial">
-      <div class="video-testimonial-frame">
-        <button type="button" class="video-thumb" data-video-id="nwddtqAZ4bE" aria-label="Reproducir testimonio en video de May">
-          <img src="https://i.ytimg.com/vi/nwddtqAZ4bE/hqdefault.jpg" alt="" loading="lazy">
-          <span class="play-btn" aria-hidden="true">&#9658;</span>
-        </button>
-      </div>
-      <cite>— <span data-key="individual.video.v2_autor">May</span></cite>
-    </article>
-  </div>
-</section>
-
-<section class="section-dark" aria-labelledby="individual-cta-h">
-  <div class="section text-center">
-    <p class="eyebrow" data-key="individual.cta.eyebrow">Empecemos</p>
-    <h2 id="individual-cta-h" data-key="individual.cta.titulo">Da el primer paso</h2>
-    <a href="index.html#agenda?servicio=individual" class="btn btn-gold" data-key="individual.cta.boton">Agendar sesión individual</a>
-  </div>
-</section>
-
-<!-- Testimonios de texto (Yoly, Ale) removidos a pedido del cliente: eran de
-     otro servicio/contexto, no de Coaching Individual. Las keys
-     individual.testimonios.* quedan huérfanas en el CSV/hoja, sin borrar.
-     Los dos testimonios de abajo (Mónica Orellana, María Elena Moreno) son
-     reales y de este servicio -- van fijos en el HTML, fuera del sistema
-     data-key/Sheets, siguiendo la convención de esta etapa de cambios
-     estructurales (ver conversación: cambios en paralelo, sin tocar la
-     conexión CSV/hoja existente). -->
 <section class="section" aria-labelledby="testimonios-individual-h">
-  <p class="eyebrow">Testimonios</p>
-  <h2 id="testimonios-individual-h">Palabras de quienes han <em class="accent-italic">vivido el proceso</em></h2>
-  <div class="card-grid">
-    <blockquote class="card testimonial">
-      <span class="quote-mark" aria-hidden="true">&#8221;</span>
-      <p>&ldquo;Terminando mi terapia me nació hacer esto. Quiero agradecerte de corazón por todo lo que ha significado este proceso contigo. Tu acompañamiento ha sido un antes y un después en mi vida. Gracias a tu guía he aprendido que, aun frente a los mismos hechos, siempre existen distintas formas de mirarlos, sentirlos y actuar, y que esa elección cambia completamente la manera en que vivo mi día a día. Hoy me siento más consciente, más en paz y con herramientas reales para enfrentar la vida desde un lugar mucho más amable conmigo misma. Valoro profundamente tu guía, tu escucha y la forma tan respetuosa y humana en que me has acompañado en este camino de transformación. Gracias por ayudarme a reencontrarme conmigo y a vivir con una mirada distinta, más consciente y más plena.&rdquo;</p>
-      <cite>— Mónica Orellana (Coaching Apreciativo)</cite>
-    </blockquote>
-    <blockquote class="card testimonial">
-      <span class="quote-mark" aria-hidden="true">&#8221;</span>
-      <p>&ldquo;Nunca pensé en pedir ayuda, nunca busqué ser parte de una terapia… Pero sin darme cuenta, conversando Denisse, la vida se confabuló para hacerme parte de un coaching ontológico… y lo agradezco, porque hoy pienso que sí lo necesitaba, pero en ese momento no lo sabía. Conversar y comentar el día a día, hablar de mis preocupaciones, penas, momentos difíciles de salud, lágrimas y alegrías… hizo que me sintiera acompañada, escuchada, comprendida y sobre todo querida.&rdquo;</p>
-      <cite>— María Elena Moreno (Coaching Ontológico)</cite>
-    </blockquote>
+  <p class="eyebrow" data-key="individual.testimonios.eyebrow">Testimonios</p>
+  <h2 id="testimonios-individual-h" data-key="individual.testimonios.titulo">Palabras de quienes han <em class="accent-italic">caminado el proceso</em></h2>
+  <div class="testimonial-carousel">
+    <div class="testimonial-viewport">
+    <div class="testimonial-track" id="testimonialTrack">
+      <div class="testimonial-page">
+        <blockquote class="card testimonial">
+          <span class="quote-mark" aria-hidden="true">&#8221;</span>
+          <p>&ldquo;<span data-key="individual.testimonios.t1_texto">Linda Denisse, yo te agradezco de corazón lo bien que me ha hecho este taller. Soy una persona nueva, con herramientas que no conocía y que puedo ocupar en mi nueva yo.</span>&rdquo;</p>
+          <cite>— <span data-key="individual.testimonios.t1_autor">Yoly</span></cite>
+        </blockquote>
+        <blockquote class="card testimonial">
+          <span class="quote-mark" aria-hidden="true">&#8221;</span>
+          <p>&ldquo;<span data-key="individual.testimonios.t2_texto">Tu taller fue una experiencia muy mágica, cargada de energía femenina; un espacio para soltar y entregar muchas cosas que nos nublan la conciencia, nos enredan las emociones y nos desconectan del día a día. Sentí un gran alivio a 24 horas del taller respecto a mi ansiedad. Gracias por regalarme este espacio, para hacerme cariño y ser más consciente de mí, de mi entorno y de lo que realmente quiero.</span>&rdquo;</p>
+          <cite>— <span data-key="individual.testimonios.t2_autor">Ale</span></cite>
+        </blockquote>
+      </div>
+    </div>
+    </div>
+
+    <div class="carousel-controls">
+      <button type="button" id="testimonialPrev" class="carousel-btn" aria-label="Testimonios anteriores">&#8249;</button>
+      <div class="carousel-dots" id="testimonialDots"></div>
+      <button type="button" id="testimonialNext" class="carousel-btn" aria-label="Testimonios siguientes">&#8250;</button>
+    </div>
   </div>
 </section>
 
@@ -184,9 +172,15 @@
         <p data-key="individual.faq.p1_respuesta">Cada proceso es único. La cantidad de sesiones dependerá de tus objetivos y de la profundidad del tema a abordar; en muchos casos, los cambios comienzan a percibirse desde la primera sesión.</p>
       </div>
     </div>
-    <!-- Pregunta "¿Es solo para personas en crisis...?" removida a pedido
-         del cliente. Las keys individual.faq.p2_pregunta/p2_respuesta
-         quedan huérfanas en el CSV/hoja, no se borraron. -->
+    <div class="faq-item">
+      <button type="button" class="faq-question" aria-expanded="false">
+        <span data-key="individual.faq.p2_pregunta">¿Es solo para personas en crisis, o también sirve si "estoy bien" pero quiero más claridad?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer hidden">
+        <p data-key="individual.faq.p2_respuesta">Sirve para ambos casos. Muchas personas llegan sin una crisis puntual, simplemente buscando más claridad, propósito o coherencia en las decisiones que están tomando.</p>
+      </div>
+    </div>
     <div class="faq-item">
       <button type="button" class="faq-question" aria-expanded="false">
         <span data-key="individual.faq.p3_pregunta">¿Las sesiones son online o presenciales?</span>
@@ -202,7 +196,7 @@
         <span class="faq-icon">+</span>
       </button>
       <div class="faq-answer hidden">
-        <p data-key="individual.faq.p4_respuesta">La primera conversación es de exploración: conversamos sobre lo que buscas y evaluamos juntos.</p>
+        <p data-key="individual.faq.p4_respuesta">La primera conversación es de exploración: conversamos sobre lo que buscas y evaluamos juntas si es un buen momento para comenzar. Puedes detener el proceso cuando lo necesites.</p>
       </div>
     </div>
   </div>

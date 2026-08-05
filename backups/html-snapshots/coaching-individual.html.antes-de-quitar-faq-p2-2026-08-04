@@ -145,30 +145,10 @@
   </div>
 </section>
 
-<!-- Testimonios de texto (Yoly, Ale) removidos a pedido del cliente: eran de
+<!-- Testimonios de texto (Yoly, Ale) removidos a pedido del cliente: son de
      otro servicio/contexto, no de Coaching Individual. Las keys
-     individual.testimonios.* quedan huérfanas en el CSV/hoja, sin borrar.
-     Los dos testimonios de abajo (Mónica Orellana, María Elena Moreno) son
-     reales y de este servicio -- van fijos en el HTML, fuera del sistema
-     data-key/Sheets, siguiendo la convención de esta etapa de cambios
-     estructurales (ver conversación: cambios en paralelo, sin tocar la
-     conexión CSV/hoja existente). -->
-<section class="section" aria-labelledby="testimonios-individual-h">
-  <p class="eyebrow">Testimonios</p>
-  <h2 id="testimonios-individual-h">Palabras de quienes han <em class="accent-italic">vivido el proceso</em></h2>
-  <div class="card-grid">
-    <blockquote class="card testimonial">
-      <span class="quote-mark" aria-hidden="true">&#8221;</span>
-      <p>&ldquo;Terminando mi terapia me nació hacer esto. Quiero agradecerte de corazón por todo lo que ha significado este proceso contigo. Tu acompañamiento ha sido un antes y un después en mi vida. Gracias a tu guía he aprendido que, aun frente a los mismos hechos, siempre existen distintas formas de mirarlos, sentirlos y actuar, y que esa elección cambia completamente la manera en que vivo mi día a día. Hoy me siento más consciente, más en paz y con herramientas reales para enfrentar la vida desde un lugar mucho más amable conmigo misma. Valoro profundamente tu guía, tu escucha y la forma tan respetuosa y humana en que me has acompañado en este camino de transformación. Gracias por ayudarme a reencontrarme conmigo y a vivir con una mirada distinta, más consciente y más plena.&rdquo;</p>
-      <cite>— Mónica Orellana (Coaching Apreciativo)</cite>
-    </blockquote>
-    <blockquote class="card testimonial">
-      <span class="quote-mark" aria-hidden="true">&#8221;</span>
-      <p>&ldquo;Nunca pensé en pedir ayuda, nunca busqué ser parte de una terapia… Pero sin darme cuenta, conversando Denisse, la vida se confabuló para hacerme parte de un coaching ontológico… y lo agradezco, porque hoy pienso que sí lo necesitaba, pero en ese momento no lo sabía. Conversar y comentar el día a día, hablar de mis preocupaciones, penas, momentos difíciles de salud, lágrimas y alegrías… hizo que me sintiera acompañada, escuchada, comprendida y sobre todo querida.&rdquo;</p>
-      <cite>— María Elena Moreno (Coaching Ontológico)</cite>
-    </blockquote>
-  </div>
-</section>
+     individual.testimonios.* quedan huérfanas en el CSV/hoja -- no se
+     borraron -- hasta que existan testimonios reales de este servicio. -->
 
 <!-- Contenido borrador: Denisse debe revisar y ajustar preguntas/respuestas con su información real antes de publicar. -->
 <section class="section section-narrow faq-section" aria-labelledby="faq-individual-h">
@@ -184,9 +164,15 @@
         <p data-key="individual.faq.p1_respuesta">Cada proceso es único. La cantidad de sesiones dependerá de tus objetivos y de la profundidad del tema a abordar; en muchos casos, los cambios comienzan a percibirse desde la primera sesión.</p>
       </div>
     </div>
-    <!-- Pregunta "¿Es solo para personas en crisis...?" removida a pedido
-         del cliente. Las keys individual.faq.p2_pregunta/p2_respuesta
-         quedan huérfanas en el CSV/hoja, no se borraron. -->
+    <div class="faq-item">
+      <button type="button" class="faq-question" aria-expanded="false">
+        <span data-key="individual.faq.p2_pregunta">¿Es solo para personas en crisis, o también sirve si "estoy bien" pero quiero más claridad?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer hidden">
+        <p data-key="individual.faq.p2_respuesta">Sirve para ambos casos. Muchas personas llegan sin una crisis puntual, simplemente buscando más claridad, propósito o coherencia en las decisiones que están tomando.</p>
+      </div>
+    </div>
     <div class="faq-item">
       <button type="button" class="faq-question" aria-expanded="false">
         <span data-key="individual.faq.p3_pregunta">¿Las sesiones son online o presenciales?</span>

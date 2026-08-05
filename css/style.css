@@ -48,6 +48,46 @@ a:hover { color: var(--accent-dark); }
   outline-offset: 2px;
 }
 
+/* Botón CTA flotante — clon del .nav-btn de la página (mismo texto/link),
+   aparece recién después de cierto scroll. En pruebas: ver comentario en
+   js/main.js para ajustar el umbral de scroll. */
+.floating-cta {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 95;
+  box-shadow: var(--shadow-elegant);
+  opacity: 0;
+  transform: translateY(16px);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.floating-cta.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+@media (max-width: 640px) {
+  /* Barra de ancho completo pegada abajo, no botón flotante -- evita que
+     tape texto de secciones largas (testimonios, FAQ, etc). El body
+     reserva el espacio equivalente vía .floating-cta-visible para que el
+     contenido nunca quede detrás. */
+  .floating-cta {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+    padding: 18px 24px;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 -4px 20px -8px oklch(0.22 0.06 265 / 0.3);
+    transform: translateY(100%);
+  }
+  .floating-cta.visible { transform: translateY(0); }
+  body.floating-cta-visible { padding-bottom: 68px; }
+}
+
 /* Herramienta interna ubicar-texto.html — resalte temporal al llegar via
    #locate=KEY. Duración debe coincidir con el setTimeout en js/main.js. */
 .locate-highlight {
@@ -338,6 +378,12 @@ a:hover { color: var(--accent-dark); }
   gap: 64px;
   align-items: start;
 }
+
+/* Pedido del cliente: que el borde inferior de la foto quede a la altura
+   de "aquello que ya no" en la tarjeta de Constelaciones. Medido en
+   desktop (1400px) via CDP -- si el contenido de esa columna cambia mucho
+   de largo, puede necesitar reajuste. */
+.about-hero .hero-photo { margin-top: 228px; }
 
 .about-hero h2 {
   font-family: 'Instrument Serif', serif;
@@ -714,6 +760,23 @@ a.about-feature-highlight:hover { text-decoration: underline; }
 .curso-actions { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
 .curso-actions .btn { font-size: 15px; padding: 14px 30px; }
 
+/* Complemento de la caja de hero: "Ideal para" en dos grupos. Texto fijo,
+   fuera del sistema data-key/Sheets (estructura, no contenido editable). */
+.ideal-para {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+.ideal-para-title { font-weight: 600; font-size: 18px; margin: 0 0 20px 0; }
+.ideal-para-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 48px;
+}
+.ideal-para-grid ul { margin: 0; padding-left: 20px; }
+.ideal-para-grid li { color: var(--ink-soft); margin-bottom: 10px; line-height: 1.5; }
+.ideal-para-grid li:last-child { margin-bottom: 0; }
+
 .curso-grid img, .curso-grid .service-photo-placeholder {
   width: 100%;
   height: auto;
@@ -963,6 +1026,7 @@ a.about-feature-highlight:hover { text-decoration: underline; }
 
   .curso-box { padding: 32px 24px; }
   .curso-grid { grid-template-columns: 1fr; }
+  .ideal-para-grid { grid-template-columns: 1fr; }
 
   .card-grid-services { grid-template-columns: 1fr; }
 

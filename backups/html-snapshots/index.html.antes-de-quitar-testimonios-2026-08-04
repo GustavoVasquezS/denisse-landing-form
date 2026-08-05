@@ -145,7 +145,7 @@
         <p data-key="inicio.servicios.card1_texto">Sesiones personalizadas para acompañarte en procesos de cambio, claridad y desarrollo personal. A través de un cambio del observador, descubrirás nuevas perspectivas que te permitirán comprender, gestionar y transformar tus pensamientos y creencias limitantes, abriendo nuevas posibilidades para tu vida.</p>
         <div class="service-links">
           <a href="coaching-individual.html" class="service-link">Conocer más &#8594;</a>
-          <a href="coaching-individual.html#testimonios-video-individual-h" class="service-link">Testimonios &#8594;</a>
+          <a href="#testimonios-h" class="service-link">Testimonios &#8594;</a>
           <a href="#agenda?servicio=individual" class="service-link">Agendar &#8594;</a>
         </div>
       </article>
@@ -156,7 +156,7 @@
         <p data-key="inicio.servicios.card2_texto">Transforma la manera en que tu organización se comunica, colabora y lidera. Diseñamos procesos que fortalecen el liderazgo, mejoran el compromiso de los equipos y aumentan la efectividad para alcanzar objetivos estratégicos.</p>
         <div class="service-links">
           <a href="coaching-equipos.html" class="service-link">Conocer más &#8594;</a>
-          <a href="coaching-equipos.html#testimonios-equipos-h" class="service-link">Testimonios &#8594;</a>
+          <a href="#testimonios-h" class="service-link">Testimonios &#8594;</a>
           <a href="#agenda?servicio=equipos" class="service-link">Agendar &#8594;</a>
         </div>
       </article>
@@ -167,7 +167,7 @@
         <p data-key="inicio.servicios.card3_texto">Transforma tu presente comprendiendo el origen de lo que hoy limita tu vida. A través de las Constelaciones descubrirás cómo las dinámicas de tu familia y de los sistemas de los que formas parte influyen en tus relaciones, decisiones y bienestar. Al hacer visibles esos patrones, podrás generar cambios profundos y duraderos.</p>
         <div class="service-links">
           <a href="constelaciones.html" class="service-link">Conocer más &#8594;</a>
-          <a href="constelaciones.html#testimonios-video-constelaciones-h" class="service-link">Testimonios &#8594;</a>
+          <a href="#testimonios-h" class="service-link">Testimonios &#8594;</a>
           <a href="#agenda?servicio=constelaciones" class="service-link">Agendar &#8594;</a>
         </div>
       </article>
@@ -181,7 +181,7 @@
         <p data-key="inicio.servicios.card4_texto">Herramientas prácticas para transformar patrones de pensamiento, gestionar emociones y mejorar tu comunicación.</p>
         <div class="service-links">
           <a href="pnl.html" class="service-link">Conocer más &#8594;</a>
-          <a href="pnl.html#testimonios-pnl-h" class="service-link">Testimonios &#8594;</a>
+          <a href="#testimonios-h" class="service-link">Testimonios &#8594;</a>
           <a href="#agenda?servicio=pnl" class="service-link">Agendar &#8594;</a>
         </div>
       </article>
@@ -220,9 +220,47 @@
   </div>
 </section>
 
-<!-- Sección de testimonios del index removida: quedó absorbida por los
-     testimonios propios de cada landing de servicio. Las keys
-     inicio.testimonios.* quedan huérfanas en el CSV/hoja, sin borrar. -->
+<section class="section" aria-labelledby="testimonios-h">
+  <p class="eyebrow" data-key="inicio.testimonios.eyebrow">Testimonios</p>
+  <h2 id="testimonios-h" data-key="inicio.testimonios.titulo">Palabras de quienes han <em class="accent-italic">caminado el proceso</em></h2>
+
+  <div class="testimonial-carousel">
+    <div class="testimonial-viewport">
+    <div class="testimonial-track" id="testimonialTrack">
+      <div class="testimonial-page">
+        <blockquote class="card testimonial">
+          <span class="quote-mark" aria-hidden="true">&#8221;</span>
+          <p>&ldquo;<span data-key="inicio.testimonios.t1_texto">Yo gracias a ti, Denisse, y a este curso he logrado en mí increíbles cambios. ¡Gracias!</span>&rdquo;</p>
+          <cite>— <span data-key="inicio.testimonios.t1_autor">María José Villavicencio</span></cite>
+        </blockquote>
+        <blockquote class="card testimonial">
+          <span class="quote-mark" aria-hidden="true">&#8221;</span>
+          <p>&ldquo;<span data-key="inicio.testimonios.t2_texto">Denisse, agradezco profundamente este taller que está siendo tremendamente significativo y me ha ayudado muchísimo. Estoy súper agradecida de esta preciosa oportunidad de abrirnos entre todas, así ir sanando, creciendo, viéndonos y compartiendo con mis compañeras de este camino, que son mujeres tremendas.</span>&rdquo;</p>
+          <cite>— <span data-key="inicio.testimonios.t2_autor">Javiera Encina</span></cite>
+        </blockquote>
+        <blockquote class="card testimonial">
+          <span class="quote-mark" aria-hidden="true">&#8221;</span>
+          <p>&ldquo;<span data-key="inicio.testimonios.t3_texto">Linda Denisse, yo te agradezco de corazón lo bien que me ha hecho este taller. Soy una persona nueva, con herramientas que no conocía y que puedo ocupar en mi nueva yo.</span>&rdquo;</p>
+          <cite>— <span data-key="inicio.testimonios.t3_autor">Yoly</span></cite>
+        </blockquote>
+      </div>
+      <div class="testimonial-page">
+        <blockquote class="card testimonial">
+          <span class="quote-mark" aria-hidden="true">&#8221;</span>
+          <p>&ldquo;<span data-key="inicio.testimonios.t4_texto">Tu taller fue una experiencia muy mágica, cargada de energía femenina; un espacio para soltar y entregar muchas cosas que nos nublan la conciencia, nos enredan las emociones y nos desconectan del día a día. Sentí un gran alivio a 24 horas del taller respecto a mi ansiedad. Gracias por regalarme este espacio, para hacerme cariño y ser más consciente de mí, de mi entorno y de lo que realmente quiero.</span>&rdquo;</p>
+          <cite>— <span data-key="inicio.testimonios.t4_autor">Ale</span></cite>
+        </blockquote>
+      </div>
+    </div>
+    </div>
+
+    <div class="carousel-controls">
+      <button type="button" id="testimonialPrev" class="carousel-btn" aria-label="Testimonios anteriores">&#8249;</button>
+      <div class="carousel-dots" id="testimonialDots"></div>
+      <button type="button" id="testimonialNext" class="carousel-btn" aria-label="Testimonios siguientes">&#8250;</button>
+    </div>
+  </div>
+</section>
 
 <!-- Contenido borrador: Denisse debe revisar y ajustar preguntas/respuestas con su información real antes de publicar. -->
 <section id="faq" class="section section-narrow faq-section" aria-labelledby="faq-h">
