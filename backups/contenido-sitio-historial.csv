@@ -17,20 +17,20 @@ inicio.meta.titulo,Inicio → (SEO) Título de la pestaña del navegador,Denisse
 inicio.meta.descripcion,Inicio → (SEO) Descripción para buscadores,"Coaching Ontológico y Apreciativo, PNL y Constelaciones Sistémicas y Familiares con Denisse Karmy. Acompañamiento para personas, equipos y organizaciones en procesos de transformación."
 inicio.hero.eyebrow,Inicio → Hero → texto pequeño superior,Coach ontológico y apreciativo · PNL · Constelaciones Sistémicas y Familiares
 inicio.hero.titulo,Inicio → Hero → título principal (cita),"No cambio a las personas, las ayudo a recordar quiénes son cuando se atreven a mirar diferente."
-inicio.hero.subtitulo,Inicio → Hero → bajada,"Acompaño a personas, equipos y organizaciones en procesos de transformación personal y profesional."
+inicio.hero.subtitulo,Inicio → Hero → bajada,"Acompaño a personas, grupos, equipos y organizaciones en procesos de transformación personal y profesional."
 inicio.hero.boton_agendar,Inicio → Hero → botón 1,Agendar una sesión
 inicio.hero.boton_servicios,Inicio → Hero → botón 2,Conocer servicios
 inicio.hero.badge_cita,Inicio → Hero → foto → etiqueta destacada,Mirar diferente.
 inicio.hero.badge_sub,Inicio → Hero → foto → etiqueta destacada (subtítulo),El primer paso
 inicio.sobremi.titulo,Inicio → Sobre mí → título de sección,Sobre mí
-inicio.sobremi.tagline,Inicio → Sobre mí → frase destacada,Transformo desafíos en oportunidades de crecimiento y bienestar.
+inicio.sobremi.tagline,Inicio → Sobre mí → frase destacada,Te acompaño a transformar desafíos en oportunidades de crecimiento y bienestar.
 inicio.sobremi.parrafo,Inicio → Sobre mí → párrafo principal,"Integro el Coaching Ontológico y Apreciativo, la Programación Neurolingüística (PNL) y las Constelaciones Sistémicas y Familiares para guiar procesos de cambio reales y sostenibles."
 inicio.sobremi.bullet1,Inicio → Sobre mí → viñeta 1 (ícono persona),"Acompaño a personas y equipos a descubrir su mejor versión, fortalecer sus relaciones y tomar decisiones con claridad, propósito y coherencia."
 inicio.sobremi.bullet2,Inicio → Sobre mí → viñeta 2 (ícono corazón),"Creo en el poder de una conversación significativa para abrir nuevas posibilidades, sanar vínculos y construir una vida con sentido."
-inicio.sobremi.bullet3,Inicio → Sobre mí → viñeta 3 (ícono libro),"Autora del libro La Verdad, Claves para tu Felicidad. Un libro profundo de autoayuda que explora junto a Denisse los intrincados caminos de la autoconciencia y el desarrollo personal para vivir en felicidad."
+inicio.sobremi.bullet3,Inicio → Sobre mí → viñeta 3 (ícono libro),"Autora del libro La Verdad, Claves para tu Felicidad. Un libro profundo de autoayuda que explora junto a Denisse los intrincados caminos de la autoconciencia y el desarrollo personal para vivir en tranquilidad."
 inicio.sobremi.credencial1_titulo,Inicio → Sobre mí → tarjeta credencial 1 → título,Coach ontológico y apreciativo
 inicio.sobremi.credencial1_texto,Inicio → Sobre mí → tarjeta credencial 1 → texto,"Acompaño procesos desde una mirada integral, humana y orientada a soluciones."
-inicio.sobremi.credencial2_titulo,Inicio → Sobre mí → tarjeta credencial 2 → título,Facilitadora en PNL
+inicio.sobremi.credencial2_titulo,Inicio → Sobre mí → tarjeta credencial 2 → título,Practitioner en PNL
 inicio.sobremi.credencial2_texto,Inicio → Sobre mí → tarjeta credencial 2 → texto,"Herramientas prácticas para transformar pensamientos, emociones y patrones conductuales, entre otros."
 inicio.sobremi.credencial3_titulo,Inicio → Sobre mí → tarjeta credencial 3 → título,Especialista en Constelaciones Sistémicas y Familiares
 inicio.sobremi.credencial3_texto,Inicio → Sobre mí → tarjeta credencial 3 → texto,"Te acompaño a comprender la dinámica de tus relaciones y a liberar aquello que ya no contribuye a tu crecimiento y bienestar, tanto en el ámbito personal como empresarial."
@@ -45,7 +45,7 @@ inicio.marquee.item6,Inicio → Franja de palabras → 6,Transformación
 inicio.servicios.eyebrow,Inicio → Servicios → texto pequeño superior,Servicios
 inicio.servicios.titulo,Inicio → Servicios → título de sección,"Cuatro caminos, una misma búsqueda."
 inicio.servicios.card1_titulo,Inicio → Servicios → Tarjeta 1 (Coaching Individual) → título,Coaching Individual
-inicio.servicios.card1_texto,Inicio → Servicios → Tarjeta 1 → descripción,"Sesiones personalizadas para acompañarte en procesos de cambio, claridad y desarrollo personal. A través de un cambio del observador, descubrirás nuevas perspectivas que te permitirán comprender, gestionar y transformar tus emociones, abriendo nuevas posibilidades para tu vida."
+inicio.servicios.card1_texto,Inicio → Servicios → Tarjeta 1 → descripción,"Sesiones personalizadas para acompañarte en procesos de cambio, claridad y desarrollo personal. A través de un cambio del observador, descubrirás nuevas perspectivas que te permitirán comprender, gestionar y transformar tus pensamientos y creencias limitantes, abriendo nuevas posibilidades para tu vida."
 inicio.servicios.card2_titulo,Inicio → Servicios → Tarjeta 2 (Coaching Equipos) → título,Coaching para Equipos y Organizaciones
 inicio.servicios.card2_texto,Inicio → Servicios → Tarjeta 2 → descripción,"Transforma la manera en que tu organización se comunica, colabora y lidera. Diseñamos procesos que fortalecen el liderazgo, mejoran el compromiso de los equipos y aumentan la efectividad para alcanzar objetivos estratégicos."
 inicio.servicios.card3_titulo,Inicio → Servicios → Tarjeta 3 (Constelaciones) → título,Constelaciones Sistémicas y Familiares
@@ -60,7 +60,7 @@ inicio.curso.boton_comprar,Inicio → Curso (adelanto) → botón 2,Comprar el c
 inicio.curso.video_placeholder,Inicio → Curso (adelanto) → texto del video pendiente,Video de YouTube del curso (próximamente)
 inicio.libro.eyebrow,Inicio → Libro (adelanto) → texto pequeño superior,"Libro · Denisse Karmy, autora"
 inicio.libro.titulo,Inicio → Libro (adelanto) → título,"La Verdad, Claves para tu Felicidad"
-inicio.libro.texto,Inicio → Libro (adelanto) → descripción,Un libro profundo de autoayuda que explora junto a Denisse los intrincados caminos de la autoconciencia y el desarrollo personal para vivir en felicidad.
+inicio.libro.texto,Inicio → Libro (adelanto) → descripción,Un libro profundo de autoayuda que explora junto a Denisse los intrincados caminos de la autoconciencia y el desarrollo personal para vivir en tranquilidad.
 inicio.libro.boton,Inicio → Libro (adelanto) → botón,Conocer el libro
 inicio.testimonios.eyebrow,Inicio → Testimonios → texto pequeño superior,Testimonios
 inicio.testimonios.titulo,Inicio → Testimonios → título de sección,Palabras de quienes han caminado el proceso
@@ -101,7 +101,7 @@ individual.meta.titulo,Coaching Individual → (SEO) Título de la pestaña,Coac
 individual.meta.descripcion,Coaching Individual → (SEO) Descripción para buscadores,"Sesiones de Coaching Individual con Denisse Karmy: procesos de cambio, claridad y desarrollo personal, uno a uno."
 individual.hero.eyebrow,Coaching Individual → Hero → texto pequeño superior,Sesiones · Coaching Individual
 individual.hero.titulo,Coaching Individual → Hero → título,Coaching Individual
-individual.hero.subtitulo,Coaching Individual → Hero → bajada,"Un espacio 1:1 para mirar diferente, ganar claridad y avanzar con decisiones propias."
+individual.hero.subtitulo,Coaching Individual → Hero → bajada,"Es un proceso estructurado 1:1, en vivo (vía Zoom), basado en coaching ontológico profesional y/o apreciativo. A través de preguntas poderosas y retroalimentación experta, descubrirás cómo mirar diferente, ganar claridad y avanzar con decisiones propias."
 individual.hero.boton_agendar,Coaching Individual → Hero → botón 1,Agendar sesión
 individual.hero.boton_testimonios,Coaching Individual → Hero → botón 2,Ver testimonios
 individual.video.eyebrow,Coaching Individual → Testimonios en video → texto pequeño superior,Testimonios en video
@@ -110,7 +110,7 @@ individual.video.v1_autor,Coaching Individual → Testimonios en video → Video
 individual.video.v2_autor,Coaching Individual → Testimonios en video → Video 2 → autora,May
 individual.detalle.eyebrow,Coaching Individual → Sobre este servicio → texto pequeño superior,Sobre este servicio
 individual.detalle.titulo,Coaching Individual → Sobre este servicio → título,Cómo trabajamos
-individual.detalle.texto,Coaching Individual → Sobre este servicio → descripción,"Sesiones personalizadas para acompañarte en procesos de cambio, claridad y desarrollo personal. A través de un cambio del observador, descubrirás nuevas perspectivas que te permitirán comprender, gestionar y transformar tus emociones, abriendo nuevas posibilidades para tu vida."
+individual.detalle.texto,Coaching Individual → Sobre este servicio → descripción,"Sesiones personalizadas para acompañarte en procesos de cambio, claridad y desarrollo personal. A través de un cambio del observador, descubrirás nuevas perspectivas que te permitirán comprender, gestionar y transformar tus emociones, forma de pensar y tu corporalidad, abriendo nuevas posibilidades para tu vida."
 individual.cta.eyebrow,Coaching Individual → CTA intermedio → texto pequeño superior,Empecemos
 individual.cta.titulo,Coaching Individual → CTA intermedio → título,Da el primer paso
 individual.cta.boton,Coaching Individual → CTA intermedio → botón,Agendar sesión individual
@@ -137,7 +137,7 @@ individual.faq.p2_respuesta,Coaching Individual → FAQ → Respuesta 2,"Sirve p
 individual.faq.p3_pregunta,Coaching Individual → FAQ → Pregunta 3,¿Las sesiones son online o presenciales?
 individual.faq.p3_respuesta,Coaching Individual → FAQ → Respuesta 3,"Ambas modalidades están disponibles, según lo que te acomode mejor."
 individual.faq.p4_pregunta,Coaching Individual → FAQ → Pregunta 4,¿Qué pasa si no siento conexión con el proceso?
-individual.faq.p4_respuesta,Coaching Individual → FAQ → Respuesta 4,La primera conversación es de exploración: conversamos sobre lo que buscas y evaluamos juntas si es un buen momento para comenzar. Puedes detener el proceso cuando lo necesites.
+individual.faq.p4_respuesta,Coaching Individual → FAQ → Respuesta 4,La primera conversación es de exploración: conversamos sobre lo que buscas y evaluamos juntos.
 equipos.meta.titulo,Coaching Equipos → (SEO) Título de la pestaña,Coaching para Equipos y Organizaciones — Denisse Karmy
 equipos.meta.descripcion,Coaching Equipos → (SEO) Descripción para buscadores,"Coaching para Equipos y Organizaciones con Denisse Karmy: procesos para fortalecer liderazgo, comunicación y efectividad organizacional."
 equipos.hero.eyebrow,Coaching Equipos → Hero → texto pequeño superior,Sesiones · Coaching para Equipos y Organizaciones
