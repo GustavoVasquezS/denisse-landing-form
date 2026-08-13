@@ -26,6 +26,69 @@
   --shadow-elegant: 0 30px 80px -30px oklch(0.22 0.06 265 / 0.4);
 }
 
+/* PRUEBA DE COLOR (temporal, para comparar con el cliente) -- paleta
+   alternativa activada con el botón .palette-toggle (ver js/main.js).
+   Azul #001C55 (pedido exacto del cliente, convertido a oklch) + blanco
+   para texto sobre ese azul. Se mantiene el mismo dorado (ya pasa
+   contraste AAA sobre este azul, 7.35:1 -- conversa bien sin cambios) y
+   se ajustan cream/ink/bordes para acompañar el tono más vívido del
+   nuevo azul (hue 261 vs 265 del azul actual, pero mucho más saturado).
+   No altera estructura ni layout, solo colores. Quitar este bloque y el
+   botón de main.js una vez que se decida qué paleta usar. */
+:root[data-palette="azul"] {
+  --cream: oklch(0.97 0.012 85);
+  --cream-alt: oklch(0.925 0.022 83);
+  --navy: oklch(0.252 0.109 261.1);
+  --navy-card: oklch(0.34 0.095 261);
+  --gold: oklch(0.755 0.13 80);
+  --gold-tint: oklch(0.905 0.04 80);
+
+  --card-bg: oklch(0.985 0.008 85);
+  --ink: oklch(0.28 0.09 261);
+  --ink-soft: oklch(0.40 0.05 261);
+  --border: oklch(0.85 0.03 80);
+  --on-accent: oklch(1 0 0);
+  --on-navy: oklch(1 0 0);
+  --on-navy-soft: oklch(0.85 0.03 261);
+
+  --shadow-soft: 0 10px 40px -20px oklch(0.252 0.109 261.1 / 0.2);
+  --shadow-elegant: 0 30px 80px -30px oklch(0.252 0.109 261.1 / 0.4);
+}
+
+.palette-toggle {
+  position: fixed;
+  left: 24px;
+  bottom: 24px;
+  z-index: 96;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--ink);
+  box-shadow: var(--shadow-soft);
+  cursor: pointer;
+}
+@media (max-width: 640px) {
+  /* Arriba de donde queda la barra completa del CTA flotante en mobile,
+     para que nunca se solapen. Se reduce a solo el ícono (sin texto) para
+     taparle lo menos posible al contenido mientras se hace scroll. */
+  .palette-toggle {
+    left: 12px;
+    bottom: 78px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+  }
+  .palette-toggle-label { display: none; }
+}
+
 * { box-sizing: border-box; }
 
 ::selection {
