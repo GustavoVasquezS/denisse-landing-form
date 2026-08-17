@@ -115,6 +115,20 @@ document.addEventListener('keydown', (e) => {
   });
 });
 
+// En mobile, el botón flotante y el toggle de paleta son elementos fijos
+// que pueden quedar tapando texto mientras se hace scroll por el medio de
+// la página (el padding-bottom solo evita que tapen el último tramo antes
+// del footer, no el scroll intermedio). Se ocultan mientras hay scroll
+// activo y reaparecen al detenerse, patrón estándar para barras fijas.
+let scrollingStopTimeout;
+window.addEventListener('scroll', () => {
+  document.body.classList.add('is-scrolling');
+  clearTimeout(scrollingStopTimeout);
+  scrollingStopTimeout = setTimeout(() => {
+    document.body.classList.remove('is-scrolling');
+  }, 400);
+}, { passive: true });
+
 // PRUEBA DE COLOR (temporal, para comparar con el cliente) -- alterna entre
 // la paleta actual y la paleta azul propuesta (#001C55 + blanco, ver
 // css/style.css). Se guarda en localStorage para que quede igual al

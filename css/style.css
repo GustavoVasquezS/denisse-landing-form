@@ -70,6 +70,7 @@
   color: var(--ink);
   box-shadow: var(--shadow-soft);
   cursor: pointer;
+  transition: opacity 0.2s ease;
 }
 @media (max-width: 640px) {
   /* Arriba de donde queda la barra completa del CTA flotante en mobile,
@@ -87,6 +88,14 @@
     font-size: 17px;
   }
   .palette-toggle-label { display: none; }
+
+  /* Ocultos mientras hay scroll activo -- ver comentario en js/main.js,
+     evita que tapen texto que va pasando por el fondo de la pantalla. */
+  body.is-scrolling .floating-cta,
+  body.is-scrolling .palette-toggle {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 * { box-sizing: border-box; }
@@ -233,7 +242,7 @@ a:hover { color: var(--accent-dark); }
 
 .logo {
   font-family: 'Instrument Serif', serif;
-  font-size: 26px;
+  font-size: 52px; /* pedido del cliente: que el logo ocupe el doble de ancho que antes (137px -> 275px, medido) para destacar sobre el nav */
   letter-spacing: 0.02em;
   text-decoration: none;
   color: inherit;
@@ -442,11 +451,10 @@ a:hover { color: var(--accent-dark); }
   align-items: start;
 }
 
-/* Pedido del cliente: que el borde inferior de la foto quede a la altura
-   de "aquello que ya no" en la tarjeta de Constelaciones. Medido en
-   desktop (1400px) via CDP -- si el contenido de esa columna cambia mucho
-   de largo, puede necesitar reajuste. */
-.about-hero .hero-photo { margin-top: 228px; }
+/* El margin-top que alineaba la foto con la tarjeta de Constelaciones se
+   quitó: esa tarjeta (y las otras 2 de credenciales) se eliminaron a
+   pedido del cliente, así que la referencia ya no existe. La foto vuelve
+   a su alineación natural (align-items: start del grid). */
 
 .about-hero h2 {
   font-family: 'Instrument Serif', serif;
