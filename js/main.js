@@ -88,7 +88,18 @@ async function applyContentOverrides() {
 // sheet fetch settles, whether it succeeded or silently failed -- otherwise
 // the locator tool could highlight stale HTML-default text/position instead
 // of the final sheet-resolved content.
-applyContentOverrides().finally(applyLocateHash);
+//
+// SUSPENDIDO a pedido del cliente (2026-08-19): el sitio deja de depender
+// de la hoja de Google Sheets para el texto -- de ahora en más todo el
+// contenido editable se edita directo en el HTML, porque vienen cambios
+// estructurales. Verificado antes de suspender: HTML y hoja coincidían
+// 100% (364/364 keys), así que ningún texto visible cambió al desactivar
+// esto. applyContentOverrides() y toda su infraestructura (arriba en este
+// archivo) quedan intactas sin borrar nada, por si se necesita reactivar
+// más adelante -- para reactivar, descomentar la línea de abajo y borrar
+// la siguiente.
+// applyContentOverrides().finally(applyLocateHash);
+applyLocateHash();
 
 document.querySelectorAll('.nav-dropdown-toggle').forEach((toggle) => {
   const dropdown = toggle.closest('.nav-dropdown');
