@@ -7,10 +7,17 @@ name: Backup contenido del sitio
 # Si la hoja se corrompe o se borra en Google, este historial sigue disponible.
 
 on:
-  schedule:
-    # Cada 6 horas. El cron de GitHub Actions siempre corre en UTC, no en
-    # hora de Chile.
-    - cron: '0 */6 * * *'
+  # SUSPENDIDO (2026-08-19): el sitio dejó de depender de la hoja de
+  # Google Sheets (ver commit "Suspender la dependencia del sitio con la
+  # hoja de Google Sheets") -- ahora se edita directo en el HTML. Se
+  # apaga la corrida automática cada 6h para que sus commits no
+  # interfieran con los pushes de los cambios directos. Sigue disponible
+  # workflow_dispatch por si se necesita una corrida manual puntual. Para
+  # reactivar la corrida automática, descomentar el bloque schedule.
+  # schedule:
+  #   # Cada 6 horas. El cron de GitHub Actions siempre corre en UTC, no
+  #   # en hora de Chile.
+  #   - cron: '0 */6 * * *'
   workflow_dispatch: {}
 
 permissions:
