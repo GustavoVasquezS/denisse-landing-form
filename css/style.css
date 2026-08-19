@@ -50,9 +50,128 @@
   --on-accent: oklch(1 0 0);
   --on-navy: oklch(1 0 0);
   --on-navy-soft: oklch(0.85 0.03 261);
+  --service-card-bg: oklch(0.34 0.095 261);
 
   --shadow-soft: 0 10px 40px -20px oklch(0.252 0.109 261.1 / 0.2);
   --shadow-elegant: 0 30px 80px -30px oklch(0.252 0.109 261.1 / 0.4);
+}
+
+/* PRUEBA DE DEGRADADOS (temporal, para comparar con el cliente) -- 4
+   variantes azul->morado, partiendo del mismo azul #001C55 de la paleta
+   "azul" de arriba. Reemplazan SOLO donde hoy hay navy sólido (secciones
+   oscuras, footer, badge de la foto, botón del header) -- el dorado de
+   los botones CTA principales (Agendar, etc) se mantiene igual, sin
+   cambios, según lo confirmado con el cliente. Los cuadros de servicios
+   (tarjetas de credenciales, testimonios, etc) usan --card-bg, que no se
+   toca acá, así que quedan claros como siempre.
+   Contraste verificado: texto blanco pasa AA (>=4.5:1) en cada punto de
+   cada degradado. */
+:root[data-palette="grad1"] {
+  --cream: oklch(0.97 0.012 85);
+  --cream-alt: oklch(0.925 0.022 83);
+  --navy: oklch(0.252 0.109 261.1);
+  --navy-card: oklch(0.34 0.095 261);
+  --gradient-navy: linear-gradient(135deg, #001C55 0%, #6B5FC7 100%);
+  --gold: oklch(0.755 0.13 80);
+  --gold-tint: oklch(0.905 0.04 80);
+  --card-bg: oklch(0.985 0.008 85);
+  --ink: oklch(0.28 0.09 261);
+  --ink-soft: oklch(0.40 0.05 261);
+  --border: oklch(0.85 0.03 80);
+  --on-accent: oklch(1 0 0);
+  --on-navy: oklch(1 0 0);
+  --on-navy-soft: oklch(0.88 0.02 280);
+  --service-card-bg: oklch(0.34 0.095 261);
+  --shadow-soft: 0 10px 40px -20px oklch(0.252 0.109 261.1 / 0.2);
+  --shadow-elegant: 0 30px 80px -30px oklch(0.252 0.109 261.1 / 0.4);
+}
+:root[data-palette="grad2"] {
+  --cream: oklch(0.97 0.012 85);
+  --cream-alt: oklch(0.925 0.022 83);
+  --navy: oklch(0.252 0.109 261.1);
+  --navy-card: oklch(0.34 0.095 261);
+  --gradient-navy: linear-gradient(135deg, #0033FF 0%, #8262CC 100%);
+  --gold: oklch(0.755 0.13 80);
+  --gold-tint: oklch(0.905 0.04 80);
+  --card-bg: oklch(0.985 0.008 85);
+  --ink: oklch(0.28 0.09 261);
+  --ink-soft: oklch(0.40 0.05 261);
+  --border: oklch(0.85 0.03 80);
+  --on-accent: oklch(1 0 0);
+  --on-navy: oklch(1 0 0);
+  --on-navy-soft: oklch(0.88 0.02 280);
+  --service-card-bg: oklch(0.34 0.095 261);
+  --shadow-soft: 0 10px 40px -20px oklch(0.252 0.109 261.1 / 0.2);
+  --shadow-elegant: 0 30px 80px -30px oklch(0.252 0.109 261.1 / 0.4);
+}
+:root[data-palette="grad3"] {
+  --cream: oklch(0.97 0.012 85);
+  --cream-alt: oklch(0.925 0.022 83);
+  --navy: oklch(0.252 0.109 261.1);
+  --navy-card: oklch(0.34 0.095 261);
+  --gradient-navy: linear-gradient(135deg, #00033D 0%, #4B2E9E 100%);
+  --gold: oklch(0.755 0.13 80);
+  --gold-tint: oklch(0.905 0.04 80);
+  --card-bg: oklch(0.985 0.008 85);
+  --ink: oklch(0.28 0.09 261);
+  --ink-soft: oklch(0.40 0.05 261);
+  --border: oklch(0.85 0.03 80);
+  --on-accent: oklch(1 0 0);
+  --on-navy: oklch(1 0 0);
+  --on-navy-soft: oklch(0.88 0.02 280);
+  --service-card-bg: oklch(0.34 0.095 261);
+  --shadow-soft: 0 10px 40px -20px oklch(0.252 0.109 261.1 / 0.2);
+  --shadow-elegant: 0 30px 80px -30px oklch(0.252 0.109 261.1 / 0.4);
+}
+:root[data-palette="grad4"] {
+  --cream: oklch(0.97 0.012 85);
+  --cream-alt: oklch(0.925 0.022 83);
+  --navy: oklch(0.252 0.109 261.1);
+  --navy-card: oklch(0.34 0.095 261);
+  --gradient-navy: linear-gradient(135deg, #001C55 0%, #8A4FD9 55%, #8F4FCF 100%);
+  --gold: oklch(0.755 0.13 80);
+  --gold-tint: oklch(0.905 0.04 80);
+  --card-bg: oklch(0.985 0.008 85);
+  --ink: oklch(0.28 0.09 261);
+  --ink-soft: oklch(0.40 0.05 261);
+  --border: oklch(0.85 0.03 80);
+  --on-accent: oklch(1 0 0);
+  --on-navy: oklch(1 0 0);
+  --on-navy-soft: oklch(0.88 0.02 280);
+  --service-card-bg: oklch(0.34 0.095 261);
+  --shadow-soft: 0 10px 40px -20px oklch(0.252 0.109 261.1 / 0.2);
+  --shadow-elegant: 0 30px 80px -30px oklch(0.252 0.109 261.1 / 0.4);
+}
+
+/* Overlay del degradado -- solo se activa con las 4 paletas grad*, deja
+   intactas las reglas base (background: var(--navy) / var(--accent)) que
+   siguen sirviendo de respaldo si se desactiva el degradado. */
+[data-palette^="grad"] .section-dark,
+[data-palette^="grad"] .hero-badge,
+[data-palette^="grad"] .site-nav .nav-btn,
+[data-palette^="grad"] .btn-accent {
+  background-image: var(--gradient-navy);
+}
+
+/* Las tarjetas de servicios (dentro de .section-dark) van en un azul
+   oscuro (mismo tono que --navy-card) que acompaña al fondo/degradado
+   activo, en vez del crema plano que usan por defecto -- pedido del
+   cliente tras comparar en vivo. En el estado por defecto (sin paleta)
+   siguen claras como ya se corrigió antes. El texto pasa a los colores
+   claros (on-navy/on-navy-soft) para que se lea sobre este fondo oscuro,
+   solo en estos estados de paleta -- por defecto sigue oscuro sobre la
+   tarjeta clara. */
+[data-palette="azul"] .section-dark .card,
+[data-palette^="grad"] .section-dark .card {
+  background: var(--service-card-bg);
+}
+[data-palette="azul"] .section-dark .card h3,
+[data-palette^="grad"] .section-dark .card h3 {
+  color: var(--on-navy);
+}
+[data-palette="azul"] .section-dark .card p,
+[data-palette^="grad"] .section-dark .card p {
+  color: var(--on-navy-soft);
 }
 
 .palette-toggle {
@@ -63,7 +182,7 @@
   font: inherit;
   font-size: 13px;
   font-weight: 600;
-  padding: 10px 18px;
+  padding: 10px 16px;
   border-radius: 100px;
   border: 1px solid var(--border);
   background: var(--card-bg);
@@ -71,23 +190,18 @@
   box-shadow: var(--shadow-soft);
   cursor: pointer;
   transition: opacity 0.2s ease;
+  max-width: 150px;
 }
 @media (max-width: 640px) {
   /* Arriba de donde queda la barra completa del CTA flotante en mobile,
-     para que nunca se solapen. Se reduce a solo el ícono (sin texto) para
-     taparle lo menos posible al contenido mientras se hace scroll. */
+     para que nunca se solapen. */
   .palette-toggle {
     left: 12px;
     bottom: 78px;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 17px;
+    font-size: 12px;
+    padding: 8px 12px;
+    max-width: 120px;
   }
-  .palette-toggle-label { display: none; }
 
   /* Ocultos mientras hay scroll activo -- ver comentario en js/main.js,
      evita que tapen texto que va pasando por el fondo de la pantalla. */
@@ -323,13 +437,14 @@ a:hover { color: var(--accent-dark); }
 .section-dark p, .section-dark .body-copy { color: var(--on-navy-soft); }
 .section-dark .eyebrow { color: var(--gold); }
 
-.section-dark .card {
-  background: var(--navy-card);
-  border-color: rgba(245, 240, 228, 0.1);
-  box-shadow: none;
-}
-
-.section-dark .card p { color: var(--on-navy-soft); }
+/* Pedido del cliente: los cuadros de servicios deben verse claros incluso
+   dentro de una sección de fondo oscuro (antes usaban --navy-card, un
+   navy medio) -- se restaura el fondo/borde/sombra claros normales de
+   .card y se corrigen los colores de texto que estaban pensados para
+   fondo oscuro. */
+.section-dark .card { background: var(--card-bg); }
+.section-dark .card h3 { color: var(--ink); }
+.section-dark .card p { color: var(--ink-soft); }
 
 /* Keyword marquee band */
 .marquee-band {

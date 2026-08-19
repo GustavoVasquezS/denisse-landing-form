@@ -140,41 +140,45 @@ window.addEventListener('scroll', () => {
   }, 400);
 }, { passive: true });
 
-// PRUEBA DE COLOR (temporal, para comparar con el cliente) -- alterna entre
-// la paleta actual y la paleta azul propuesta (#001C55 + blanco, ver
-// css/style.css). Se guarda en localStorage para que quede igual al
-// navegar entre páginas durante la comparación. No toca estructura ni
-// contenido -- solo cambia las variables de color. Quitar este bloque y el
-// bloque `:root[data-palette="azul"]` de style.css una vez que decidan.
+// PRUEBA DE COLOR (temporal, para comparar con el cliente) -- selector
+// entre la paleta actual, el azul sólido, y 4 variantes de degradado
+// azul->morado (ver css/style.css). Se guarda en localStorage para que
+// quede igual al navegar entre páginas durante la comparación. No toca
+// estructura ni contenido -- solo cambia las variables de color. Quitar
+// este bloque y los bloques `:root[data-palette="..."]` de style.css una
+// vez que decidan.
 const PALETTE_STORAGE_KEY = 'previewPalette';
-if (localStorage.getItem(PALETTE_STORAGE_KEY) === 'azul') {
-  document.documentElement.setAttribute('data-palette', 'azul');
+const PALETTE_OPTIONS = [
+  { value: '', label: 'Paleta actual' },
+  { value: 'azul', label: 'Azul sólido' },
+  { value: 'grad1', label: 'Degradado 1' },
+  { value: 'grad2', label: 'Degradado 2' },
+  { value: 'grad3', label: 'Degradado 3' },
+  { value: 'grad4', label: 'Degradado 4' },
+];
+const savedPalette = localStorage.getItem(PALETTE_STORAGE_KEY) || '';
+if (savedPalette) {
+  document.documentElement.setAttribute('data-palette', savedPalette);
 }
-const paletteToggle = document.createElement('button');
-paletteToggle.type = 'button';
+const paletteToggle = document.createElement('select');
 paletteToggle.className = 'palette-toggle';
-// Ícono siempre visible + texto que se oculta en mobile (ahí queda solo el
-// ícono, más chico, para taparle lo menos posible al texto de la página
-// mientras se hace scroll -- ver el ajuste que se hizo con el CTA
-// flotante para el mismo problema).
-paletteToggle.innerHTML = '<span aria-hidden="true">🎨</span> <span class="palette-toggle-label"></span>';
-const paletteToggleLabel = paletteToggle.querySelector('.palette-toggle-label');
-function updatePaletteToggleLabel() {
-  const isAzul = document.documentElement.getAttribute('data-palette') === 'azul';
-  paletteToggleLabel.textContent = isAzul ? 'Ver paleta actual' : 'Ver paleta azul';
-  paletteToggle.setAttribute('aria-label', paletteToggleLabel.textContent);
+paletteToggle.setAttribute('aria-label', 'Comparar paleta de color');
+for (const opt of PALETTE_OPTIONS) {
+  const optionEl = document.createElement('option');
+  optionEl.value = opt.value;
+  optionEl.textContent = opt.label;
+  if (opt.value === savedPalette) optionEl.selected = true;
+  paletteToggle.appendChild(optionEl);
 }
-updatePaletteToggleLabel();
-paletteToggle.addEventListener('click', () => {
-  const isAzul = document.documentElement.getAttribute('data-palette') === 'azul';
-  if (isAzul) {
+paletteToggle.addEventListener('change', () => {
+  const value = paletteToggle.value;
+  if (value) {
+    document.documentElement.setAttribute('data-palette', value);
+    localStorage.setItem(PALETTE_STORAGE_KEY, value);
+  } else {
     document.documentElement.removeAttribute('data-palette');
     localStorage.removeItem(PALETTE_STORAGE_KEY);
-  } else {
-    document.documentElement.setAttribute('data-palette', 'azul');
-    localStorage.setItem(PALETTE_STORAGE_KEY, 'azul');
   }
-  updatePaletteToggleLabel();
 });
 document.body.appendChild(paletteToggle);
 
