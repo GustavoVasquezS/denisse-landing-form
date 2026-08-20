@@ -140,48 +140,6 @@ window.addEventListener('scroll', () => {
   }, 400);
 }, { passive: true });
 
-// PRUEBA DE COLOR (temporal, para comparar con el cliente) -- selector
-// entre la paleta actual, el azul sólido, y 4 variantes de degradado
-// azul->morado (ver css/style.css). Se guarda en localStorage para que
-// quede igual al navegar entre páginas durante la comparación. No toca
-// estructura ni contenido -- solo cambia las variables de color. Quitar
-// este bloque y los bloques `:root[data-palette="..."]` de style.css una
-// vez que decidan.
-const PALETTE_STORAGE_KEY = 'previewPalette';
-const PALETTE_OPTIONS = [
-  { value: '', label: 'Paleta actual' },
-  { value: 'azul', label: 'Azul sólido' },
-  { value: 'grad1', label: 'Degradado 1' },
-  { value: 'grad2', label: 'Degradado 2' },
-  { value: 'grad3', label: 'Degradado 3' },
-  { value: 'grad4', label: 'Degradado 4' },
-];
-const savedPalette = localStorage.getItem(PALETTE_STORAGE_KEY) || '';
-if (savedPalette) {
-  document.documentElement.setAttribute('data-palette', savedPalette);
-}
-const paletteToggle = document.createElement('select');
-paletteToggle.className = 'palette-toggle';
-paletteToggle.setAttribute('aria-label', 'Comparar paleta de color');
-for (const opt of PALETTE_OPTIONS) {
-  const optionEl = document.createElement('option');
-  optionEl.value = opt.value;
-  optionEl.textContent = opt.label;
-  if (opt.value === savedPalette) optionEl.selected = true;
-  paletteToggle.appendChild(optionEl);
-}
-paletteToggle.addEventListener('change', () => {
-  const value = paletteToggle.value;
-  if (value) {
-    document.documentElement.setAttribute('data-palette', value);
-    localStorage.setItem(PALETTE_STORAGE_KEY, value);
-  } else {
-    document.documentElement.removeAttribute('data-palette');
-    localStorage.removeItem(PALETTE_STORAGE_KEY);
-  }
-});
-document.body.appendChild(paletteToggle);
-
 // Botón CTA flotante -- prueba en curso, ver si aporta a la conversión.
 // Clona el .nav-btn existente (texto + link) en vez de tener una lista
 // aparte por página, así queda igual de correcto en las 7 páginas y sigue

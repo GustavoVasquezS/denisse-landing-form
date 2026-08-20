@@ -1,72 +1,7 @@
 :root {
-  /* Cream + Navy + Gold palette — exact oklch tokens ported from the
-     Lovable reference (flourish-web-designer/src/styles.css) so the two
-     sites share identical colors without adopting its React/Tailwind stack. */
-  --cream: oklch(0.965 0.018 85);
-  --cream-alt: oklch(0.92 0.028 82);
-  --navy: oklch(0.22 0.06 265);
-  --navy-card: oklch(0.28 0.055 265);
-  --gold: oklch(0.755 0.12 82);
-  --gold-tint: oklch(0.905 0.038 82);
-
-  --bg: var(--cream);
-  --card-bg: oklch(0.98 0.012 85);
-  --ink: oklch(0.37 0.075 258);
-  --ink-soft: oklch(0.42 0.04 265);
-  --border: oklch(0.86 0.04 82);
-  --accent: var(--ink);
-  --accent-dark: var(--gold);
-  --accent-tint: var(--gold-tint);
-  --on-accent: var(--cream);
-  --on-navy: var(--cream);
-  --on-navy-soft: oklch(0.78 0.02 88);
-  --error: oklch(0.55 0.22 27);
-
-  --shadow-soft: 0 10px 40px -20px oklch(0.22 0.06 265 / 0.2);
-  --shadow-elegant: 0 30px 80px -30px oklch(0.22 0.06 265 / 0.4);
-}
-
-/* PRUEBA DE COLOR (temporal, para comparar con el cliente) -- paleta
-   alternativa activada con el botón .palette-toggle (ver js/main.js).
-   Azul #001C55 (pedido exacto del cliente, convertido a oklch) + blanco
-   para texto sobre ese azul. Se mantiene el mismo dorado (ya pasa
-   contraste AAA sobre este azul, 7.35:1 -- conversa bien sin cambios) y
-   se ajustan cream/ink/bordes para acompañar el tono más vívido del
-   nuevo azul (hue 261 vs 265 del azul actual, pero mucho más saturado).
-   No altera estructura ni layout, solo colores. Quitar este bloque y el
-   botón de main.js una vez que se decida qué paleta usar. */
-:root[data-palette="azul"] {
-  --cream: oklch(0.97 0.012 85);
-  --cream-alt: oklch(0.925 0.022 83);
-  --navy: oklch(0.252 0.109 261.1);
-  --navy-card: oklch(0.34 0.095 261);
-  --gold: oklch(0.755 0.13 80);
-  --gold-tint: oklch(0.905 0.04 80);
-
-  --card-bg: oklch(0.985 0.008 85);
-  --ink: oklch(0.28 0.09 261);
-  --ink-soft: oklch(0.40 0.05 261);
-  --border: oklch(0.85 0.03 80);
-  --on-accent: oklch(1 0 0);
-  --on-navy: oklch(1 0 0);
-  --on-navy-soft: oklch(0.85 0.03 261);
-  --service-card-bg: oklch(0.34 0.095 261);
-
-  --shadow-soft: 0 10px 40px -20px oklch(0.252 0.109 261.1 / 0.2);
-  --shadow-elegant: 0 30px 80px -30px oklch(0.252 0.109 261.1 / 0.4);
-}
-
-/* PRUEBA DE DEGRADADOS (temporal, para comparar con el cliente) -- 4
-   variantes azul->morado, partiendo del mismo azul #001C55 de la paleta
-   "azul" de arriba. Reemplazan SOLO donde hoy hay navy sólido (secciones
-   oscuras, footer, badge de la foto, botón del header) -- el dorado de
-   los botones CTA principales (Agendar, etc) se mantiene igual, sin
-   cambios, según lo confirmado con el cliente. Los cuadros de servicios
-   (tarjetas de credenciales, testimonios, etc) usan --card-bg, que no se
-   toca acá, así que quedan claros como siempre.
-   Contraste verificado: texto blanco pasa AA (>=4.5:1) en cada punto de
-   cada degradado. */
-:root[data-palette="grad1"] {
+  /* Cream + Navy(degradado) + Gold palette -- paleta final elegida por el
+     cliente tras comparar el azul sólido y 4 degradados candidatos.
+     Corresponde al "Degradado 1": azul #001C55 a violeta suave #6B5FC7. */
   --cream: oklch(0.97 0.012 85);
   --cream-alt: oklch(0.925 0.022 83);
   --navy: oklch(0.252 0.109 261.1);
@@ -74,139 +9,35 @@
   --gradient-navy: linear-gradient(135deg, #001C55 0%, #6B5FC7 100%);
   --gold: oklch(0.755 0.13 80);
   --gold-tint: oklch(0.905 0.04 80);
+
+  --bg: var(--cream);
   --card-bg: oklch(0.985 0.008 85);
   --ink: oklch(0.28 0.09 261);
   --ink-soft: oklch(0.40 0.05 261);
   --border: oklch(0.85 0.03 80);
+  --accent: var(--ink);
+  --accent-dark: var(--gold);
+  --accent-tint: var(--gold-tint);
   --on-accent: oklch(1 0 0);
   --on-navy: oklch(1 0 0);
   --on-navy-soft: oklch(0.88 0.02 280);
-  --service-card-bg: oklch(0.34 0.095 261);
-  --shadow-soft: 0 10px 40px -20px oklch(0.252 0.109 261.1 / 0.2);
-  --shadow-elegant: 0 30px 80px -30px oklch(0.252 0.109 261.1 / 0.4);
-}
-:root[data-palette="grad2"] {
-  --cream: oklch(0.97 0.012 85);
-  --cream-alt: oklch(0.925 0.022 83);
-  --navy: oklch(0.252 0.109 261.1);
-  --navy-card: oklch(0.34 0.095 261);
-  --gradient-navy: linear-gradient(135deg, #0033FF 0%, #8262CC 100%);
-  --gold: oklch(0.755 0.13 80);
-  --gold-tint: oklch(0.905 0.04 80);
-  --card-bg: oklch(0.985 0.008 85);
-  --ink: oklch(0.28 0.09 261);
-  --ink-soft: oklch(0.40 0.05 261);
-  --border: oklch(0.85 0.03 80);
-  --on-accent: oklch(1 0 0);
-  --on-navy: oklch(1 0 0);
-  --on-navy-soft: oklch(0.88 0.02 280);
-  --service-card-bg: oklch(0.34 0.095 261);
-  --shadow-soft: 0 10px 40px -20px oklch(0.252 0.109 261.1 / 0.2);
-  --shadow-elegant: 0 30px 80px -30px oklch(0.252 0.109 261.1 / 0.4);
-}
-:root[data-palette="grad3"] {
-  --cream: oklch(0.97 0.012 85);
-  --cream-alt: oklch(0.925 0.022 83);
-  --navy: oklch(0.252 0.109 261.1);
-  --navy-card: oklch(0.34 0.095 261);
-  --gradient-navy: linear-gradient(135deg, #00033D 0%, #4B2E9E 100%);
-  --gold: oklch(0.755 0.13 80);
-  --gold-tint: oklch(0.905 0.04 80);
-  --card-bg: oklch(0.985 0.008 85);
-  --ink: oklch(0.28 0.09 261);
-  --ink-soft: oklch(0.40 0.05 261);
-  --border: oklch(0.85 0.03 80);
-  --on-accent: oklch(1 0 0);
-  --on-navy: oklch(1 0 0);
-  --on-navy-soft: oklch(0.88 0.02 280);
-  --service-card-bg: oklch(0.34 0.095 261);
-  --shadow-soft: 0 10px 40px -20px oklch(0.252 0.109 261.1 / 0.2);
-  --shadow-elegant: 0 30px 80px -30px oklch(0.252 0.109 261.1 / 0.4);
-}
-:root[data-palette="grad4"] {
-  --cream: oklch(0.97 0.012 85);
-  --cream-alt: oklch(0.925 0.022 83);
-  --navy: oklch(0.252 0.109 261.1);
-  --navy-card: oklch(0.34 0.095 261);
-  --gradient-navy: linear-gradient(135deg, #001C55 0%, #8A4FD9 55%, #8F4FCF 100%);
-  --gold: oklch(0.755 0.13 80);
-  --gold-tint: oklch(0.905 0.04 80);
-  --card-bg: oklch(0.985 0.008 85);
-  --ink: oklch(0.28 0.09 261);
-  --ink-soft: oklch(0.40 0.05 261);
-  --border: oklch(0.85 0.03 80);
-  --on-accent: oklch(1 0 0);
-  --on-navy: oklch(1 0 0);
-  --on-navy-soft: oklch(0.88 0.02 280);
-  --service-card-bg: oklch(0.34 0.095 261);
+  --error: oklch(0.55 0.22 27);
+
   --shadow-soft: 0 10px 40px -20px oklch(0.252 0.109 261.1 / 0.2);
   --shadow-elegant: 0 30px 80px -30px oklch(0.252 0.109 261.1 / 0.4);
 }
 
-/* Overlay del degradado -- solo se activa con las 4 paletas grad*, deja
-   intactas las reglas base (background: var(--navy) / var(--accent)) que
-   siguen sirviendo de respaldo si se desactiva el degradado. */
-[data-palette^="grad"] .section-dark,
-[data-palette^="grad"] .hero-badge,
-[data-palette^="grad"] .site-nav .nav-btn,
-[data-palette^="grad"] .btn-accent {
-  background-image: var(--gradient-navy);
-}
+/* Las tarjetas de servicios (dentro de .section-dark) van en el mismo
+   tono de --navy-card, con texto claro para que se lea sobre ese fondo
+   oscuro. */
+.section-dark .card { background: var(--navy-card); }
+.section-dark .card h3 { color: var(--on-navy); }
+.section-dark .card p { color: var(--on-navy-soft); }
 
-/* Las tarjetas de servicios (dentro de .section-dark) van en un azul
-   oscuro (mismo tono que --navy-card) que acompaña al fondo/degradado
-   activo, en vez del crema plano que usan por defecto -- pedido del
-   cliente tras comparar en vivo. En el estado por defecto (sin paleta)
-   siguen claras como ya se corrigió antes. El texto pasa a los colores
-   claros (on-navy/on-navy-soft) para que se lea sobre este fondo oscuro,
-   solo en estos estados de paleta -- por defecto sigue oscuro sobre la
-   tarjeta clara. */
-[data-palette="azul"] .section-dark .card,
-[data-palette^="grad"] .section-dark .card {
-  background: var(--service-card-bg);
-}
-[data-palette="azul"] .section-dark .card h3,
-[data-palette^="grad"] .section-dark .card h3 {
-  color: var(--on-navy);
-}
-[data-palette="azul"] .section-dark .card p,
-[data-palette^="grad"] .section-dark .card p {
-  color: var(--on-navy-soft);
-}
-
-.palette-toggle {
-  position: fixed;
-  left: 24px;
-  bottom: 24px;
-  z-index: 96;
-  font: inherit;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 10px 16px;
-  border-radius: 100px;
-  border: 1px solid var(--border);
-  background: var(--card-bg);
-  color: var(--ink);
-  box-shadow: var(--shadow-soft);
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-  max-width: 150px;
-}
 @media (max-width: 640px) {
-  /* Arriba de donde queda la barra completa del CTA flotante en mobile,
-     para que nunca se solapen. */
-  .palette-toggle {
-    left: 12px;
-    bottom: 78px;
-    font-size: 12px;
-    padding: 8px 12px;
-    max-width: 120px;
-  }
-
-  /* Ocultos mientras hay scroll activo -- ver comentario en js/main.js,
-     evita que tapen texto que va pasando por el fondo de la pantalla. */
-  body.is-scrolling .floating-cta,
-  body.is-scrolling .palette-toggle {
+  /* Oculto mientras hay scroll activo -- ver comentario en js/main.js,
+     evita que tape texto que va pasando por el fondo de la pantalla. */
+  body.is-scrolling .floating-cta {
     opacity: 0;
     pointer-events: none;
   }
@@ -326,7 +157,7 @@ a:hover { color: var(--accent-dark); }
   cursor: pointer;
 }
 
-.btn-accent { background: var(--accent); color: var(--on-accent); }
+.btn-accent { background: var(--accent); background-image: var(--gradient-navy); color: var(--on-accent); }
 .btn-accent-dark { background: var(--accent-dark); color: var(--navy); font-size: 15px; padding: 14px 30px; }
 .btn-gold { background: var(--gold); color: var(--navy); }
 .btn-outline {
@@ -369,6 +200,7 @@ a:hover { color: var(--accent-dark); }
 
 .site-nav .nav-btn {
   background: var(--accent);
+  background-image: var(--gradient-navy);
   color: var(--on-accent);
   padding: 9px 22px;
   border-radius: 100px;
@@ -430,21 +262,13 @@ a:hover { color: var(--accent-dark); }
 /* Dark (navy) section variant */
 .section-dark {
   background: var(--navy);
+  background-image: var(--gradient-navy);
   color: var(--on-navy);
 }
 
 .section-dark h2, .section-dark h3 { color: var(--on-navy); }
 .section-dark p, .section-dark .body-copy { color: var(--on-navy-soft); }
 .section-dark .eyebrow { color: var(--gold); }
-
-/* Pedido del cliente: los cuadros de servicios deben verse claros incluso
-   dentro de una sección de fondo oscuro (antes usaban --navy-card, un
-   navy medio) -- se restaura el fondo/borde/sombra claros normales de
-   .card y se corrigen los colores de texto que estaban pensados para
-   fondo oscuro. */
-.section-dark .card { background: var(--card-bg); }
-.section-dark .card h3 { color: var(--ink); }
-.section-dark .card p { color: var(--ink-soft); }
 
 /* Keyword marquee band */
 .marquee-band {
@@ -532,6 +356,7 @@ a:hover { color: var(--accent-dark); }
   left: -24px;
   bottom: 32px;
   background: var(--navy);
+  background-image: var(--gradient-navy);
   color: var(--on-navy);
   padding: 18px 24px;
   border-radius: 14px;
@@ -956,7 +781,7 @@ a.about-feature-highlight:hover { text-decoration: underline; }
 .ideal-para-title { font-weight: 600; font-size: 18px; margin: 0 0 20px 0; }
 .ideal-para-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 16px 48px;
 }
 .ideal-para-grid ul { margin: 0; padding-left: 20px; }
