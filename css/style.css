@@ -623,6 +623,27 @@ a.about-feature-highlight:hover { text-decoration: underline; }
 .testimonial p { font-style: italic; font-size: 15px; line-height: 1.7; color: var(--ink-soft); }
 .testimonial cite { font-size: 14px; font-weight: 600; color: var(--ink); font-style: normal; }
 
+/* Foto circular en la esquina del testimonio, pedido del cliente
+   (Coaching Individual: Mónica Orellana, María Elena Moreno). La caja
+   crece un poco (padding-bottom extra) y la cita reserva espacio a la
+   derecha para que la foto quede calzada por dentro del cuadro, sin
+   sobresalir del borde ni tapar el texto. */
+.testimonial { position: relative; }
+.testimonial.card { padding-bottom: 40px; }
+.testimonial p, .testimonial cite { padding-right: 108px; }
+.testimonial cite { display: block; }
+.testimonial.card .testimonial-photo {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--card-bg);
+  box-shadow: var(--shadow-elegant);
+}
+
 /* Video testimonial (click-to-load YouTube facade) */
 .video-testimonial { align-items: center; text-align: center; }
 .video-testimonial cite { font-size: 14px; font-weight: 600; color: var(--ink); font-style: normal; }
